@@ -1,0 +1,14 @@
+---
+#20260514 11327110 ceUeval10
+- name: Setup cron3
+  hosts: test
+  tasks:
+    - name: Run cronbin on 10th and 19th at 13:45
+      ansible.builtin.cron:
+        name: "cron3"
+        user: cara
+        minute: "15"
+        hour: "12"
+        day: "5,15"
+        job: "/bin/echo hello_c11327110"
+        state: present

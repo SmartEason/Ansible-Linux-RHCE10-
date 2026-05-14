@@ -1,0 +1,30 @@
+---
+#20260514 11327110 ceUeval10
+- name: Step 1 - Create users with parameter file values
+  hosts: test dev prod
+  tasks:
+    - name: Ensure group wang exists
+      ansible.builtin.group:
+        name: wang
+        state: present
+
+    - name: Add user cara (deyu2)
+      ansible.builtin.user:
+        name: cara
+        comment: "cara Chen"
+        uid: 4732
+        shell: /sbin/nologin
+        state: present
+
+    - name: Add wang group users using loop
+      ansible.builtin.user:
+        name: "{{ item.name }}"
+        comment: "{{ item.comm }}"
+        shell: /bin/sh
+        groups: wang
+        append: yes
+        state: present
+      loop:
+        - { name: 'glenn', comm: 'glenn Wang' }
+        - { name: 'amy', comm: 'amy Wang' }
+        - { name: 'edison', comm: 'edison Wang' }

@@ -1,0 +1,13 @@
+---
+#20260514 11327110 ceUeval10
+- name: Setup cron5 - Daily at 19:25
+  hosts: test
+  tasks:
+    - name: Run job every day at 19:25
+      ansible.builtin.cron:
+        name: "cron5"
+        user: cara
+        minute: "25"
+        hour: "19"
+        job: "/bin/echo hello_c11327110"
+        state: present

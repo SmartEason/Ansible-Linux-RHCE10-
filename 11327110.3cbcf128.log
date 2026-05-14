@@ -1,53 +1,105 @@
-drwxr-xr-x. 2 root root 6 May 14 13:14 /tmp/ceUeval9/11327110
+drwxr-xr-x. 2 root root 6 May 14 17:40 /tmp/ceUeval10/11327110
 1-5 91 11327110 李塬閎
-ceUeval8 PASS
+ceUeval9 PASS
 3cbcf128-185a-cc46-9455-d352fd7136ed
 1-5 91 11327110 李塬閎
 pubip=120.110.10.84
-start=2026-05-07 13:30
-evalstart=2026-05-14 13:14:47
-deadline=2026-05-28 13:30
-./ceUeval9 
-zflag=63,2,0,18,2,0,1
+start=2026-05-14 13:30
+evalstart=2026-05-14 17:40:48
+deadline=2026-06-04 13:30
+./ceUeval10 
+zflag=81,20,0,19,3,0,1
 download=http://dywang.csie.cyut.edu.tw/dywang/download
-ceUpara9.sh
+ceUpara10.sh
 --------BEGIN HOST EVAL------------------
-[38;5;196mceUeval9_host.ceuser_1.sefcontext.yml:NC.0[0m
-[38;5;196mceUeval9_host.ceuser_2.sefcontext1.yml:NC.0[0m
-[38;5;196mceUeval9_host.ceuser_3.linf1.yml:NC.0[0m
-[38;5;196mceUeval9_host.ceuser_4.facts1:1[0m
-Files /root/.ceUeval9/facts2 and facts2.txt differ
-[38;5;196mceUeval9_host.ceuser_5.facts2:1[0m
-grep: /root/.ceUeval9/facts1: No such file or directory
-Files /root/.ceUeval9/facts3 and facts3.txt differ
-[38;5;196mceUeval9_host.ceuser_6.facts3:1[0m
-[38;5;196mceUeval9_host.ceuser_7.report.yml:NC.0[0m
-[38;5;196mceUeval9_host.ceuser_8.report.a.yml:NC.0[0m
-[38;5;196mceUeval9_host.ceuser_9.report.b.yml:NC.0[0m
-[38;5;196mceUeval9_host.ceuser_10.report1.yml:NC.0[0m
-[38;5;196mceUeval9_host.ceuser_11.report1.a.yml:NC.0[0m
-[38;5;196mceUeval9_host.ceuser_12.report1.b.yml:NC.0[0m
-[38;5;196mceUeval9_host.ceuser_13.vfile.1:1[0m
-[38;5;196mceUeval9_host.ceuser_14.vfile.1.pw:1[0m
-ceUeval9_host.ceuser_15.passwd:0
-ceUeval9_host.ceuser_16.passwd.pw:0
-ceUeval9_host.ceuser_17.rkvfile:0
-ceUeval9_host.ceuser_18.rkvfile1:0
-ceUeval9_host.ceuser_19.rkpwlist:0
-ceUeval9_host.ceuser_20.rkpassword:0
+ceUeval10_host.ceuser_1.users.yml:0
+ceUeval10_host.ceuser_2.users_vault.yml:0
+ceUeval10_host.ceuser_3.user4hosts.yml:0
+ceUeval10_host.ceuser_4.user1.yml:0
+ceUeval10_host.ceuser_5.user2.yml:0
+ceUeval10_host.ceuser_6.user3.yml:0
+ceUeval10_host.ceuser_7.user4.yml:0
+ceUeval10_host.ceuser_8.cron1.yml:0
+ceUeval10_host.ceuser_9.cron2.yml:0
+ceUeval10_host.ceuser_10.cron3.yml:0
+ceUeval10_host.ceuser_11.cron4.yml:0
+ceUeval10_host.ceuser_12.cron5.yml:0
 --------END HOST EVAL------------------
 --------BEGIN KVM11 EVAL------------------
+ceUeval10_kvm11_1.sharegrp:0
+ceUeval10_kvm11_2.james:0
+ceUeval10_kvm11_3.james.pw:0
+ceUeval10_kvm11_4.james.pw.expires:0
+ceUeval10_kvm11_5.devgrp:0
+ceUeval10_kvm11_6.peter:0
+ceUeval10_kvm11_7.linda:0
+ceUeval10_kvm11_8.peter.pw:0
+ceUeval10_kvm11_9.linda.pw:0
+ceUeval10_kvm11_10.wang:0
+ceUeval10_kvm11_11.cara:0
+ceUeval10_kvm11_12.glenn:0
+ceUeval10_kvm11_13.glenn.pw:0
+ceUeval10_kvm11_14.glenn.pw.expires:0
+ceUeval10_kvm11_15.amy:0
+ceUeval10_kvm11_16.amy.pw:0
+ceUeval10_kvm11_17.amy.pw.expires:0
+ceUeval10_kvm11_18.edison:0
+ceUeval10_kvm11_19.edison.pw:0
+ceUeval10_kvm11_20.edison.pw.expires:0
 --------END KVM11 EVAL------------------
 --------BEGIN KVM12 EVAL------------------
+ceUeval10_kvm12_1.devgrp:0
+ceUeval10_kvm12_2.peter:0
+ceUeval10_kvm12_3.linda:0
+ceUeval10_kvm12_4.peter.pw:0
+ceUeval10_kvm12_5.linda.pw:0
+ceUeval10_kvm12_6.wang:0
+ceUeval10_kvm12_7.cara:0
+ceUeval10_kvm12_8.glenn:0
+ceUeval10_kvm12_9.glenn.pw:0
+ceUeval10_kvm12_10.glenn.pw.expires:0
+ceUeval10_kvm12_11.amy:0
+ceUeval10_kvm12_12.amy.pw:0
+ceUeval10_kvm12_13.amy.pw.expires:0
+ceUeval10_kvm12_14.edison:0
+ceUeval10_kvm12_15.edison.pw:0
+ceUeval10_kvm12_16.edison.pw.expires:0
+ceUeval10_kvm12_17.cron1:0
+ceUeval10_kvm12_18.cron2:0
+ceUeval10_kvm12_19.cron3:0
+ceUeval10_kvm12_20.cron4:0
+ceUeval10_kvm12_21.cron5:0
 --------END KVM12 EVAL------------------
 --------BEGIN KVM13 EVAL------------------
+ceUeval10_kvm13_1.prodgrp:0
+ceUeval10_kvm13_2.rita:0
+ceUeval10_kvm13_3.rita.pw:0
+ceUeval10_kvm13_4.lin:0
+ceUeval10_kvm13_5.cara:0
+ceUeval10_kvm13_6.mono:0
+ceUeval10_kvm13_7.mono.pw:0
+ceUeval10_kvm13_8.mono.pw.expires:0
+ceUeval10_kvm13_9.patty:0
+ceUeval10_kvm13_10.patty.pw:0
+ceUeval10_kvm13_11.patty.pw.expires:0
 --------END KVM13 EVAL------------------
 --------BEGIN KVM14 EVAL------------------
+ceUeval10_kvm14_1.prodgrp:0
+ceUeval10_kvm14_2.rita:0
+ceUeval10_kvm14_3.rita.pw:0
+ceUeval10_kvm14_4.lin:0
+ceUeval10_kvm14_5.cara:0
+ceUeval10_kvm14_6.mono:0
+ceUeval10_kvm14_7.mono.pw:0
+ceUeval10_kvm14_8.mono.pw.expires:0
+ceUeval10_kvm14_9.patty:0
+ceUeval10_kvm14_10.patty.pw:0
+ceUeval10_kvm14_11.patty.pw.expires:0
 --------END KVM14 EVAL------------------
 --------BEGIN KVM15 EVAL------------------
 --------END KVM15 EVAL------------------
-[48;5;226m1-5 91 11327110 李塬閎	(6/20), Keep fighting![0m
-start=2026-05-07 13:30
-evalstart=2026-05-14 13:14:46
-evalend=2026-05-14 13:15:18
-deadline=2026-05-28 13:30
+[48;5;82m1-5 91 11327110 李塬閎	(75/75), Good job![0m
+start=2026-05-14 13:30
+evalstart=2026-05-14 17:40:47
+evalend=2026-05-14 17:41:03
+deadline=2026-06-04 13:30

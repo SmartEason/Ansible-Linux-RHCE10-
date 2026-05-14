@@ -1,0 +1,32 @@
+---
+#20260514 11327110 ceUeval10
+- name: Create users with Valut
+  hosts: dev test prod
+  vars_files: pwlist.yml 
+  tasks:
+  - block:
+    - name: Ensure group "devgrp" exists
+      ansible.builtin.group:
+        name: devgrp
+        state: present
+    - name: Add users
+      ansible.builtin.user:
+        name: "{{ item }}"
+        groups: devgrp
+        password: "{{ devpw | password_hash('sha512') }}"
+      loop:
+        - peter
+        - linda
+    when: '"dev" in group_names or "test" in group_names'
+ 
+  - block:
+    - name: Ensure group "prodgrp" exists
+      ansible.builtin.group:
+        name: prodgrp
+        state: present
+    - name: Add user 'rita'
+      ansible.builtin.user:
+        name: rita
+        groups: prodgrp
+        password: "{{ prodpw | password_hash('sha512') }}"
+    when: '"prod" in group_names'

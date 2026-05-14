@@ -1,0 +1,19 @@
+---
+- name: Final fix for Peter and Linda
+  hosts: test
+  become: yes
+  tasks:
+    - name: Ensure devgrp exists
+      ansible.builtin.group:
+        name: devgrp
+        state: present
+
+    - name: Correct user group membership
+      ansible.builtin.user:
+        name: "{{ item }}"
+        groups: devgrp
+        append: yes
+        state: present
+      loop:
+        - peter
+        - linda

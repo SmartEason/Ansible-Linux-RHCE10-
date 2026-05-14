@@ -1,0 +1,13 @@
+---
+#20260514 11327110 ceUeval10
+- hosts: dev
+  tasks:
+  - name: Ensure group "sharegrp" exists
+    ansible.builtin.group:
+      name: sharegrp
+      state: present
+  - name: Add user 'james'
+    ansible.builtin.user:
+      name: james
+      groups: sharegrp
+      password: "{{ '123qwe' | password_hash('sha512') }}"

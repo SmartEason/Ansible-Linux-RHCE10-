@@ -1,0 +1,69 @@
+---
+# 20260514 11327110 ceUeval10
+- hosts: dev test prod
+  name: Manage users across different environments
+  become: yes
+  vars_files: wang.pw
+  tasks:
+    # 2. 只有主機 dev 及 test 才產生群組 wang 的 user (包含 cara)
+    - name: Configure wang group users and cara
+      block:
+        - name: Add user cara (dev/test)
+          user:
+            name: cara
+            comment: "cara Chen"
+            uid: 4732
+            shell: /sbin/nologin
+            state: present
+
+        - name: Ensure group wang exists
+          group:
+            name: wang
+            state: present
+
+        - name: Add users in wang group
+          user:
+            name: "{{ item.name }}"
+            comment: "{{ item.comm }}"
+            shell: /bin/sh
+            groups: wang
+            append: yes
+            password: "{{ vars[item.name] | password_hash('sha512') }}"
+            password_expire_max: 26
+            state: present
+          loop:
+            - { name: 'glenn', comm: 'glenn Wang' }
+            - { name: 'amy', comm: 'amy Wang' }
+            - { name: 'edison', comm: 'edison Wang' }
+      when: "'dev' in group_names or 'test' in group_names"
+
+    # 3. 只有主機 prod 才產生群組 lin 的 user (包含 cara)
+    - name: Configure lin group users and cara
+      block:
+        - name: Add user cara (prod)
+          user:
+            name: cara
+            comment: "cara Chen"
+            uid: 4732
+            shell: /sbin/nologin
+            state: present
+
+        - name: Ensure group lin exists
+          group:
+            name: lin
+            state: present
+
+        - name: Add users in lin group
+          user:
+            name: "{{ item.name }}"
+            comment: "{{ item.comm }}"
+            shell: /bin/sh
+            groups: lin
+            append: yes
+            password: "{{ vars[item.name] | password_hash('sha512') }}"
+            password_expire_max: 28
+            state: present
+          loop:
+            - { name: 'mono', comm: 'mono Lin' }
+            - { name: 'patty', comm: 'patty Lin' }
+      when: "'prod' in group_names"

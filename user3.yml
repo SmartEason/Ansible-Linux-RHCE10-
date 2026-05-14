@@ -1,0 +1,33 @@
+---
+# 20260514 11327110 ceUeval10
+- hosts: test
+  name: Update users with vaulted password file
+  vars_files: wang.pw
+  tasks:
+    - name: Ensure group wang exists
+      group:
+        name: wang
+        state: present
+
+    - name: Add user cara
+      user:
+        name: cara
+        comment: "cara Chen"
+        uid: 4732
+        shell: /sbin/nologin
+        state: present
+
+    - name: Add users in wang group with password and expiry
+      user:
+        name: "{{ item.name }}"
+        comment: "{{ item.comm }}"
+        shell: /bin/sh
+        groups: wang
+        append: yes
+        password: "{{ vars[item.name] | password_hash('sha512') }}"
+        password_expire_max: 26
+        state: present
+      loop:
+        - { name: 'glenn', comm: 'glenn Wang' }
+        - { name: 'amy', comm: 'amy Wang' }
+        - { name: 'edison', comm: 'edison Wang' }

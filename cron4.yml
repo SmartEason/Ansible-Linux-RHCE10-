@@ -1,0 +1,14 @@
+---
+#20260514 11327110 ceUeval10
+- name: Setup cron4
+  hosts: test
+  tasks:
+    - name: Run cronbin every 25 minutes during 4 AM on Saturday
+      ansible.builtin.cron:
+        name: "cron4"
+        user: cara
+        minute: "*/13"
+        hour: "5"
+        weekday: "4"
+        job: "/bin/echo hello_c11327110"
+        state: present
