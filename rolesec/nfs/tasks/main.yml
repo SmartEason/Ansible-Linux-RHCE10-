@@ -1,0 +1,40 @@
+---
+#20260416 11327110 ceUeval6
+- name: Install nfs-utils
+  ansible.builtin.package:
+    name: nfs-utils
+    state: present
+
+- name: Start and enable firewalld
+  ansible.builtin.service:
+    name: firewalld
+    state: started
+    enabled: yes
+
+- name: Configure firewalld for NFS
+  ansible.posix.firewalld:
+    service: "{{ item }}"
+    permanent: yes
+    state: enabled
+    immediate: yes
+  loop:
+    - nfs
+    - rpc-bind
+    - mountd
+
+- name: Create a directory if it does not exist
+  ansible.builtin.file:
+    path: /public
+    state: directory
+    mode: '0755'
+
+- name: Copy exports.j2 to /etc/exports
+  ansible.builtin.template:
+    src: exports.j2
+    dest: /etc/exports
+
+- name: Restart and enable nfs-server
+  ansible.builtin.service:
+    name: nfs-server
+    state: restarted
+    enabled: yes
