@@ -1,0 +1,24 @@
+---
+# 20260416 11327110 ceUeval6
+- hosts: prod
+  name: 執行 Apache 角色任務
+  become: yes
+  roles:
+    - role: rolesec/apache
+
+  tasks:
+    - name: 驗證 Apache 服務狀態
+      ansible.builtin.systemd:
+        name: httpd
+        state: started
+      register: httpd_status
+
+    - name: 使用 curl 測試本地網頁回應
+      ansible.builtin.command: curl -s http://localhost
+      register: web_result
+      changed_when: false
+
+    - name: 顯示網頁測試結果
+      ansible.builtin.debug:
+        msg: "網頁內容回應：{{ web_result.stdout }}"
+
