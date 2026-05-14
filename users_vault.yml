@@ -1,0 +1,15 @@
+---
+#20260514 11327110 ceUeval10
+- name: Create users with Valut
+  hosts: dev
+  vars_files: pwlist.yml 
+  tasks:
+  - name: Ensure group "sharegrp" exists
+    ansible.builtin.group:
+      name: sharegrp
+      state: present
+  - name: Add user 'james'
+    ansible.builtin.user:
+      name: james
+      groups: sharegrp
+      password: "{{ devpw | password_hash('sha512') }}"
