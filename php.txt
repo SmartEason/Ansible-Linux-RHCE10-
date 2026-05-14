@@ -1,0 +1,665 @@
+
+Found 659 roles matching your search:
+
+ Name                                              Description
+ ----                                              -----------
+ 0ta2.php_role                                     Setup PHP
+ tenequm.php                                       PHP installation role.
+ aadl.docker-php-fpm-alpine                        Ansible role to manage and run the alpine php docker container.
+ aaronpederson.ansible-php7                        PHP 7 is the latest version of general-purpose scripting language that is popular in web development.
+ aaronpederson.php                                 PHP is a popular general-purpose scripting language that is popular in web development.
+ infOpen.phpmyadmin                                install phpmyadmin package
+ adarnimrod.mod-php                                Provision PHP application server using Apache with mod-php
+ adarnimrod.mod-php7                               Provision PHP7 application server using Apache with mod-php7
+ adarnimrod.php5                                   Install PHP5 (cli, not mod-php nor fpm)
+ adarnimrod.php7                                   Install PHP7 (cli, not mod-php nor fpm)
+ adarnimrod.php7-fpm                               Provision PHP7 FastCGI (FPM)
+ adarnimrod.php-fpm                                Provision PHP FastCGI (FPM)
+ adfinis-sygroup.php_fpm                           This role is used to install and configure php-fpm on CentOS
+ AerisCloud.php                                    Installs PHP on a server
+ A-j-K.php-install                                 Deploys PHP 7.1 CLI
+ Akellacom.role-telesales-phpmyadmin               Install phpMyAdmin in directory /var/www/phpmyadmin
+ Akman.php_mcrypt                                  mCrypt package for php on Linux
+ AlbanAndrieu.phpvirtualbox                        A role for installing phpvirtualbox
+ alexey-medvedchikov.php5                          Install and manage PHP5 environment using php5-fpm
+ alikins.apache_php_fpm                            Apache 2.4+ PHP-FPM support for Linux.
+ alikins.php                                       PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ alikins.php_memcached                             PHP Memcached support for Linux
+ alikins.phpmyadmin                                phpMyAdmin installation for Linux
+ alikins.php_mysql                                 PHP MySQL support for Linux.
+ alikins.php_pear                                  PHP PEAR library installation.
+ alikins.php_pecl                                  PHP PECL extension installation.
+ alikins.php_pgsql                                 PHP PostgreSQL support for Linux.
+ alikins.php_redis                                 PhpRedis support for Linux
+ alikins.php_tideways                              Tideways PHP Profiler Extension for Linux
+ alikins.php_versions                              Allows different PHP versions to be installed.
+ alikins.php_xdebug                                PHP XDebug for Linux
+ alikins.php_xhprof                                PHP XHProf for Linux
+ alvistack.php                                     Ansible Role for PHP Installation
+ amine7777.php                                     This role installs PHP on your linux machine.
+ aminvakil.php_initial                             Installs and Configures PHP on Debian Buster
+ amtega.php                                        Role to setup PHP 7.x
+ andrelohmann.apache_php                           ansible galaxy role to install deb.sury.org php and apache
+ andrelohmann.sury_php                             ansible galaxy role to install deb.sury.org php repo
+ andyceo.php                                       Install php, its modules and provide usefull settings for it
+ andyceo.php-cs-fixer                              Install PHP Coding Standards Fixer
+ andyceo.phpmyadmin                                Install phpMyAdmin - web tool for managing MySQL databases.
+ announce.newrelic-php                             New Relic PHP Agent role / Application monitoring for RHEL/CentOS, Ubuntu, Debian
+ ansible-city.php                                  PHP and FPM instalation
+ ansistrano.mini_php_app                           Role for a stateless NGINX and PHP application running CentOS 7 on DigitalOcean with Let's Encrypt support
+ antonchernik.php-fpm                              Install and configure php fpm, php cli and configure php fpm pool
+ antonchernik.php-gearman-client                   Install php gearman client
+ antoniobarbaro.php                                Install php
+ antoniobarbaro.phpmyadmin                         Install phpmyadmin
+ aosmialowski.php                                  Ansible role that installs/configures PHP on Ubuntu.
+ apham0001.php                                     PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ ansiro.apache-php                                 This Ansible Simple Role install Apache and PHP. It also allow install php packages and apache modules.
+ astsu777.ansible_role_phpmyadmin                  Install and configure PHPMyAdmin
+ AttestationLegale.php-fpm                         Php-fpm management
+ augustohp.php                                     Installs and configures PHP (+FPM), flexible configuration and sensible defaults.
+ awcrosby.apache_php_fpm_ok                        Apache 2.4+ PHP-FPM support for Linux.
+ axelitus.php                                      An ansible role to provision PHP in a server.
+ barami.sury_php                                   Install deb.sury.php repository for php
+ bas-ansible-roles-collection.php5                 Installs and configures PHP 5 with selected extensions and the Composer package manager
+ bas-ansible-roles-collection.php5-ext-postgresql9 Bridging role to use PHP 5 with PostgreSQL databases
+ bas-ansible-roles-collection.php5-nginx           Bridging role to use PHP 5 with Nginx using PHP-FPM
+ bas-ansible-roles-collection.php7                 Installs and configures PHP 7 with selected extensions and the Composer package manager
+ bas-ansible-roles-collection.php7-nginx           Bridging role to use PHP 7 with Nginx using PHP-FPM
+ bearandgiraffe.php                                Installs PHP
+ benjamin-smith.ondrej-php-repo                    Installs the ppa:ondrej/php repo on Ubuntu systems
+ benlipp.php7                                      Installs and configures PHP 7 on Ubuntu servers. Forked from itcraftsmanpl.php7
+ enrise.php                                        A role for installing and configuring PHP.
+ bodsch.php                                        ansible role to install and configure php-fpm
+ boutetnico.elastic_apm_agent_php                  Install Elastic APM PHP agent.
+ bpresles.php                                      PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ bpresles.php-xdebug                               PHP XDebug for Linux
+ brgalloway.phpipam_api                            Get available ip from phpipam and reserve returned ip address
+ bubebyte.remi_php74                               Ansible role to install and configure php74 from remi repository on CentOS.
+ buluma.ansible-role-apache-php-fpm                Apache 2.4+ PHP-FPM support for Linux.
+ buluma.php                                        Install and configure php on your system.
+ buluma.php_fpm                                    The purpose of this role is to install and configure php_fpm on your system.
+ buluma.php_memcached                              PHP Memcached support for Linux
+ buluma.phpmyadmin                                 phpMyAdmin installation for Linux
+ buluma.php_mysql                                  PHP MySQL support for Linux.
+ buluma.php_versions                               Allows different PHP versions to be installed.
+ CarlosLongarela.php7                              PHP 7.x fpm install and configuration.
+ CarlosLongarela.phpmyadmin                        Installation and configuration for PhpMyAdmin.
+ silpion.php                                       Manage PHP configuration on Ubuntu and CentOS including extensions in various versions.
+ webarch-coop.phpmyadmin                           Ansible role for installing and upgrading phpMyAdmin on Debian
+ chriskite.newrelic-php                            New Relic PHP5/Nginx Agent
+ chrsclmn.php                                      PHP 7.0 for Apache 2.4 on Ubuntu 16.04
+ chusiang.php7                                     Deploy PHP 7 (php-fpm) for nginx on Ubuntu, Debian and CentOS. (forked from itcraftsmanpl.php7)
+ City-of-Bloomington.php                           Role for maintaining PHP on Ubuntu
+ cloud3rsio.php                                    install php
+ cloud3rsio.phpbuild                               setup php-build
+ clouddrove.ansible_role_docker_php                This Ansible role install PHP On Ubuntu, CentOS Amazon-Linux With Docker
+ clouddrove.ansible_role_docker_php_node_exporter  This ansible role is used to install Redis server into Docker.
+ clouddrove.ansible_role_php                       This ansible role for install php.
+ cloudweeb.php                                     Install PHP on Linux server
+ CoffeeITWorks.ansible_phpipam                     An Ansible role that installs/configures phpIPAM http://phpipam.net/
+ colstrom.php                                      PHP is a popular general-purpose scripting language that is popular in web development.
+ colybri.php                                       Deploy for install or configure any php version for Nginx or Apache interface on Ubuntu distro
+ conn.php5-fpm                                     configures php5-fpm
+ conn.php7-fpm                                     configures php7-fpm
+ cowops.debian-php-apache                          Install Apache 2 PHP module for debian system
+ cowops.debian-php-extensions                      Install PHP extensions for debian system
+ cowops.debian-php-fpm                             Install PHP 7 FPM for debian system
+ cowops.debian-php-hhvm                            Install Php-hhvm for debian system
+ cowops.debian-php-maxmind-geoip                   Install Php-maxmind-geoip for debian system
+ cowops.debian-php-newrelic                        Install Php-newrelic for debian system
+ cowops.debian-php-phalcon                         Install Php-phalcon for debian system
+ cowops.debian-php-xdebug                          Install Php-xdebug for debian system
+ cowops.debian-php-zmq                             Install Php-zmq for debian system
+ creidinger.php                                    Install PHP packages for Debian/Ubuntu
+ creidinger.phpmyadmin                             phpmyadmin for Debian/Ubuntu
+ criecm.php-fpm                                    php-fpm server and webapps
+ cristiroma.php5                                   production-ready mod_php configuration (with httpd prefork)
+ csuka.php_fpm                                     Ansible role to setup and configure PHP-FPM
+ dagman62.apache_php                               Apache PHP install from source
+ daixijun.php                                      Install php from source code
+ daixijun.php_mcrypt                               PHP mcrypt扩展
+ daixijun.php_redis                                PHP redis扩展
+ daixijun.php_ssh2                                 PHP ssh2扩展
+ daixijun.php_yaf                                  PHP yaf扩展
+ Dalee.install-php56                               PHP 5.6 and Composer
+ Dalee.install-php7                                PHP 7.1, Composer and XDebug
+ Dalee.install_php72                               PHP 7.2, Composer and XDebug
+ damianlewis.apache_php_fpm                        Configures Apache to support PHP-FPM
+ damko.php5-fpm-debian                             Install and configure PHP5-FPM on Debian system
+ darexsu.php                                       install and configure php 7.x, php 8.x.
+ darthwade.php-pear                                PHP PEAR
+ darthwade.php-pecl                                PHP PECL
+ datadog-galaxy.php                                PHP provision role
+ datadog-galaxy.php70                              PHP 7.0 provision role
+ dav1d8.php                                        An Ansible role for installing PHP.
+ davidalger.php_cachetool                          Installs CacheTool for PHP allowing you to work with `apc`, `opcache`, etc the file status cache through the CLI.
+ davidalger.php_fpm                                PHP-FPM from IUS RPMs on RHEL / CentOS Linux
+ dblencowe.nginx-php7                              Install a basic Nginx / PHP7 setup
+ DevikaBaburaj.php_phpbins                         PHP demo role
+ devopsstore.php                                   PHP (5.4, 5.5, 5.6, 7.0, 7.1) using repositories (base, ius, webtatic, remi)
+ devopsvp.php                                      your description
+ devsoul.phpcodesniffer                            Install PHP Code Sniffer on your Linux machine
+ devsoul.phpcov                                    Install PHPCOV on your Linux machine
+ devsoul.phpcpd                                    Install PHP Copy/Paste Detector (CPD) on your Linux machine
+ devsoul.phpcsfixer                                Install PHP Coding Standards Fixer on your Linux machine
+ devsoul.phpdevtools                               Install phpdevtools on your Linux machine
+ devsoul.phploc                                    Install PHPLOC on your Linux machine
+ devsoul.phpmd                                     Install PHP Mess Detector on your Linux machine
+ devsoul.phpmetrics                                Install PhpMetrics on your Linux machine
+ devsoul.phpstan                                   Install PHPStan on your Linux machine
+ devsoul.phpunit                                   Install PHPUnit on your Linux machine
+ dictcp.php-elasticache                            ansible role for AWS Elasticache PHP extension
+ dincho.php-fpm                                    Ansible role for installing and configuring php-fpm
+ dlcoder.php                                       Ansible role for installing and configure php and php packages.
+ dmitrybelyakov.localcloud-php                     This role will install latest stable php release with a configurable list of modules, expose important settings and manage your fpm pool set up. Use this to quickly install and manage your php deployment in a reliable way.
+ dzangolab.docker_phpmyadmin                       Install phpmyadmin as a docker container
+ e1mo.php                                          PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ ecgalaxy.php                                      Installs the PHP language, CLI and extensions
+ egeneralov.ansible_php_7_2                        Provision php 7.2 for debian 9
+ paulthed.php-paul                                 PHP for RedHat/CentOS/Debian/Ubuntu.
+ ElaoInfra.php                                     A PHP role for elao symfony standard vagrant box
+ ElaoInfra.phpmyadmin                              Install and config phpMyAdmin via composer
+ ElaoInfra.phppgadmin                              Install and config phpPgAdmin via composer
+ ElaoInfra.phpredisadmin                           Install and config phpRedisAdmin via composer
+ elnebuloso.php56                                  PHP 5.6 for Linux Server
+ elnebuloso.php7                                   PHP 7 for Linux Server
+ emielmolenaar.ansible_role_php_repo_sury          An Ansible role to add Ondřej Surý's PHP repository to Debian-based hosts
+ entercloudsuite.ansible_php                       Playbook for php-fpm.
+ eRadical.php_fpm_exporter                         PHP-FPM exporter for Prometheus
+ erasme.php5-fpm                                   php5-fpm role
+ ericmdev.php56-mysql                              PHP 5.6 MySQL support for RedHat/CentOS 6.x
+ eriksencosta.php-dev                              A set of playbook roles to install multiple versions of PHP, using php-build and phpenv.
+ esperdyne.php                                     PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ evogalaxy.php-fpm                                 Installation and basic configuration of php-fpm.
+ EWS-Network.phpRole                               Small role for PHP
+ exequielrafaela.newrelic-php5-agent               Installs and configure newrelic
+ f500.php                                          Install latest PHP version in DotDeb repository
+ f500.php7                                         Install PHP version 7.X from deb.sury.org
+ f500.php7_cli                                     Install latest PHP cli version in DotDeb repository
+ f500.php7_dev                                     Install latest PHP (development package) version in DotDeb repository
+ f500.php7_fpm                                     Install latest PHP fpm version in DotDeb repository
+ f500.php8                                         Install PHP version 8.X from deb.sury.org
+ f500.php_cli                                      Install latest PHP cli version in DotDeb repository
+ f500.php_composer                                 Install Composer, the dependency manager for PHP
+ f500.php_dev                                      Install latest PHP (development package) version in DotDeb repository
+ f500.php_extensions                               Install PHP extensions
+ f500.php_fpm                                      Install latest PHP fpm version in DotDeb repository
+ f500.php_memcached                                Install memcached extension for PHP (from pear)
+ f500.php_pear                                     Install pear
+ f500.php_xdebug                                   Install xdebug extension for PHP
+ f500.php_yaml                                     Install yaml extension PHP (from pear)
+ fabiorphp.ansible_role_consul                     An ansible role to install and configure Consul agent.
+ FabriZZio.newrelic-php                            New Relic PHP agent
+ ffornari90.ansible_role_phpmyadmin                your role description
+ fiaasco.php7                                      PHP 7 Ansible role
+ firehed.php                                       Install and configure PHP
+ fprg.php                                          php ansible role for ansible galaxy
+ frogasia.ansible-role-php                         PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ FrogyYen.centos7-php7                             Installs epel-release php7 on CentOS 7
+ galal-hussein.nr-php5                             Install and configure newrelic agent for php5
+ gano2018.ansible_cakephp3                         create cakephp3 new project
+ gano2018.ansible_cakephp3_environments            cakephp_enviroments settings
+ gano2018.ansible_phpmyadmin                       insall phpmyadmin and setting
+ gcoop-libre.apache-php-fpm                        Configure php-fpm for Apache in Debian 9 servers
+ geerlingguy.apache-php-fpm                        Apache 2.4+ PHP-FPM support for Linux.
+ geerlingguy.php                                   PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ geerlingguy.php-memcached                         PHP Memcached support for Linux
+ geerlingguy.phpmyadmin                            phpMyAdmin installation for Linux
+ geerlingguy.php-mysql                             PHP MySQL support for Linux.
+ geerlingguy.php-pear                              PHP PEAR library installation.
+ geerlingguy.php-pecl                              PHP PECL extension installation.
+ geerlingguy.php-pgsql                             PHP PostgreSQL support for Linux.
+ geerlingguy.php-redis                             PhpRedis support for Linux
+ geerlingguy.php-tideways                          Tideways PHP Profiler Extension for Linux
+ geerlingguy.php-versions                          Allows different PHP versions to be installed.
+ geerlingguy.php-xdebug                            PHP XDebug for Linux
+ geerlingguy.php-xhprof                            PHP XHProf for Linux
+ genzouw.php56                                     Scrit to setup php5.6.
+ ggiinnoo.php                                      Configure php
+ goldstrike77.ansible_role_linux_phpfpm            your description
+ GSquad934.phpmyadmin                              Install and configure PHPMyAdmin
+ guisea.ansible-role-phpmyadmin                    phpMyAdmin installation for Linux
+ gurkalov.php_fpm                                  Install php7.2-fpm
+ gwenlei.phpmyadmin                                install phpmyadmin
+ gwenlei.wordpress-php7                            install php7.0 for wordpress
+ gzeel.php                                         PHP for Debian/Ubuntu.
+ gzeel.php_mysql                                   PHP MySQL support for Linux.
+ HanXHX.jenkins-php                                Jenkins-PHP for Debian
+ HanXHX.php                                        Install and configure PHP 7.x/8.x
+ HauptJ.php-fpm                                    Installs PHP-FPM 7.1
+ henriklynggaard.phpstorm                          Installs PhpStorm and plugins
+ heremias.php                                      PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ heremias.php_mysql                                PHP MySQL support for Linux.
+ heremias.php_versions                             Allows different PHP versions to be installed.
+ hitotito.php                                      role to install, configure and manage PHP
+ honomoa.php5                                      PHP is a popular general-purpose scripting language that is especially suited to web development.
+ honomoa.php5_pecl                                 PECL is a repository for PHP Extensions, providing a directory of all known extensions and hosting facilities for downloading and development of PHP extensions.
+ hostclick.php-fpm                                 Ansible php-fpm role
+ hudecof.phpmyadmin                                install phpMyAdmin from sources
+ hxpro.phpfpm                                      Install and configure php-fpm from remi repository. Tested on CentOS 7 and CentOS 8.
+ hyperfocus1337.ansible_php_fpm_role               phpfpm
+ iaroslavb.apache-modphp                           PHP module for Apache Webserver
+ iaroslavb.php-fpm                                 PHP FPM installation on Ubuntu Linux
+ icopp-ansible.php5                                Install the latest version of PHP 5 via Homebrew.
+ idealista.php_role                                PHP role
+ idealista.php-role                                PHP role
+ ansible-roles.php_fpm                             Install and Configure PHP-FPM (php5, php7.0)
+ ansible-roles.php_pecl                            Install PECL extensions for PHP via pecl or apt
+ iilness2.ans_php5_6                               This is for setup initial Ubuntu Server
+ iilness2.ans_php7_2_fpm                           This is for setup initial Ubuntu Server
+ juwai.php                                         PHP for RedHat/CentOS/Debian/Ubuntu.
+ infn-bari-school.phpmyadmin                       Install and configure phpmyadmin
+ infOpen.php                                       Ansible role to install and configure php
+ infOpen.php-apcu                                  Manage PHP APCu caching
+ infOpen.php-fpm                                   Ansible role to manage PHP-FPM installation and configuration
+ initlabopen.php-fpm-pools                         Role for configuration php-fpm pools for Debain/Ubuntu/Centos
+ injectedMonkey.php-fpm                            php-fpm role for personal use.
+ inmotionhosting.php_fpm                           Modular Ansible Role for deploying and configuring PHP-FPM
+ inofix.php-fpm                                    Install the FastCGI Process Manager
+ inofix.shariff-php                                Install the Shariff PHP Backend
+ iroquoisorg.php7                                  role for php7
+ iroquoisorg.php_fpm                               role for php fpm
+ Jberlinsky.newrelic-php                           New Relic PHP agent
+ Jberlinsky.php-fpm                                Ansible role for installing and configuring php-fpm
+ jcdarwin.php                                      An Ansible role that installs and configures php on Ubuntu.
+ jcid.ansible-role-server-php-fpm                  JCID 'server-php-fpm' role.
+ jcid.ansible-role-server-php-imagick-source       JCID 'server-php-imagick-source' role.
+ jcid.ansible-role-server-php-twig                 JCID 'server-php-twig' role.
+ jebovic.php                                       Install and configure php-fpm for lamp and lemp stack, add your own pools configurations, and customize all the php.ini config from yaml variables, also included: composer, newrelic apm, blackfire apm
+ jeffwidman.php-fpm-pool                           Helper role for creating/managing separate php-fpm pools for Centminmod installs
+ osxstrap.osx-php                                  Installs PHP and Composer on OSX, manages global composer packages.
+ jgeusebroek.php                                   Install and configures PHP
+ jhu-sheridan-libraries.php                        PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ jibsan94.ansible_php                              PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ jibsan94.ansible_phpmyadmin                       PhpMyAdmin installation for Linux
+ jkanclerz.deploy-project-php                      An Ansible for deploy php project.
+ jkanclerz.deploy-project-php-symfony              An Ansible for deploy symfony2 project.
+ jmcvetta.php5-xdebug                              Enable XDebug debuggger for PHP 5
+ joewen85.ansible_docker_phpfpm                    docker php7.4.33
+ johanmeiring.ansible_php5_newrelic                Installs New Relic PHP agent
+ josemrb.phpenv                                    Role to install custom versions of PHP using phpenv and php-build.
+ josephpconley.nginx                               Official Ansible role for NGINX
+ jtyr.php                                          Role which installs and configures PHP and PHP extensions.
+ jtyr.php_fpm                                      Role which installs the Bacula Director
+ juwai.php-memcached                               Install memcached extension with igbinary support
+ juwai.php-zerorpc                                 Install zerorpc dependency packages for php
+ KAMI911.ansible_role_php                          PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ kidou-codes.php71                                 K.K.Kidou PHP Version 7.1
+ kilerkarol.php-fpm                                Role install and configure php-fpm.
+ kleinstuff.ansible_role_newrelic_phpagent         Role to setup NewRelic PHP Agetn on RHEL/CentOS
+ kleinstuff.centos-phpfpm                          Role to install and configure php-fpm on el7
+ kosssi.php                                        Install and Configure PHP
+ kosssi.phpstorm                                   Install phpStorm.
+ kotarella1110.php                                 PHP for RedHat/CentOS/Debian/Ubuntu.
+ kurron.php-developer                              PHP IDE and command-line tools.
+ labpositiva.php                                   This Ansible Role infuses antigravity, you are warned
+ onebithq.php5-fpm                                 this ansible role manage installation and configuration of php5-fpm. Inspired from https://github.com/cocoy/ansible-playbooks
+ LaneCommunityCollege.aspects_php                  Install and configure php, php-cli, apache mod_php, and pecl libraries.
+ leafnode.php5                                     role for php5
+ leafnode.php7                                     role for php7
+ leafnode.php_fpm                                  role for php fpm
+ lesmyrmidons.php                                  PHP for RedHat/CentOS/Debian/Ubuntu.
+ leventyalcin.php7                                 Install and configure PHP7
+ lifeofguenter.php5-cli                            Install PHP5 (cli)
+ lifeofguenter.php5-fpm                            Install PHP5 (fpm)
+ lifeofguenter.php7-cli                            Installs PHP7.1 (cli)
+ lifeofguenter.php7-fpm                            Installs PHP7.1 (fpm)
+ lpcanh.centos7-php                                Instann php56w-fpm, php56w-cli, php56w-common, php56w-gd, php56w-mbstring, php56w-mcrypt, php56w-mysql, php56w-opcache, php56w-pdo, php56w-xml
+ lukasic.php                                       Debian/Ubuntu multi-php role
+ lukasz-zaroda.php-fpm                             PHP-FPM installation, configuration, and easy pool management for both PHP 5 and PHP 7 versions.
+ Lusitaniae.ansible_php5_newrelic                  Installs New Relic PHP agent
+ ansibleRoles.php                                  A php role
+ macklus.php                                       Ondrej PHP - multiple PHP versions ppa
+ manala.php                                        Handle php
+ manala.phpmyadmin                                 Handle phpmyadmin
+ manala.phppgadmin                                 Handle phppgadmin
+ manala.phpredisadmin                              Handle phpredisadmin
+ manishjuneja.php                                  PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ marcofabricio.php-scl                             Ansible role to install PHP Software Collections on CentOS
+ markushartman.php5-xdebug                         PHP XDebug for Vagrant
+ markushartman.phpstorm                            PhpStorm
+ markwilde.php                                     An Ansible role for installing PHP.
+ markwilde.php-amqp                                An Ansible role for installing AMQP module for PHP.
+ markwilde.php-common                              An Ansible role for installing Common module for PHP.
+ markwilde.php-devel                               An Ansible role for installing development files for PHP.
+ markwilde.php-gd                                  An Ansible role for installing GD module for PHP.
+ markwilde.php-imagick                             An Ansible role for installing Imagick module for PHP.
+ markwilde.php-mcrypt                              An Ansible role for installing MCrypt module for PHP.
+ markwilde.php-memcache                            An Ansible role for installing Memcache module for PHP.
+ markwilde.php-mongo                               An Ansible role for installing MongoDB module for PHP.
+ markwilde.php-mysql                               An Ansible role for installing MySQL module for PHP.
+ markwilde.php-newrelic                            An Ansible role for installing New Relic module for PHP.
+ markwilde.php-pear                                An Ansible role for installing PEAR package for PHP.
+ mats116.php5-fpm                                  php5-fpm installer
+ MatthewMi11er.newrelic-php                        An Ansible role for configuring New Relic PHP agent on Ubuntu Trusty. Based on code originally by (Mark Janssen, Dieter Provoost, Yosh de Vos)
+ MatthewMi11er.php                                 A role to configure php
+ mbaran0v.ansible_role_php                         PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ mbaran0v.ansible_role_prometheus_php_fpm_exporter Prometheus PHP-FPM Exporter https://github.com/bakins/php-fpm-exporter
+ mbocquet.php-fpm                                  Ansible role to install and configure PHP-FPM (FastCGI Process Manager).
+ mcampbell508.phpstorm                             Install the latest available version of PhpStorm, automatically.
+ plumelo.php                                       Ansible role to install PHP
+ mejo-.php-composer                                Install PHP Composer from source on Debian
+ melnikoved.php7                                   Install php7 to Centos6
+ memoryleak.php                                    A role to install and manage PHP.
+ MichaelRigart.php                                 An ansible role for installing and configuring PHP.
+ mjanser.php                                       Installs PHP in various versions
+ mkoprek.phpfpm                                    Role for install PHP / PHPFPM
+ mm0.php-code-sniffer                              Install PHP_CodeSniffer via PEAR
+ mm0.php-composer                                  An Ansible role that installs and configures PHP Composer
+ mm0.php-xdebug                                    PHP XDebug for Linux
+ monsieurbiz.geerlingguy_php                       PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ mosufy.php-memcached                              Install PHP Memcached
+ mrlesmithjr.php                                   Ansible role to install PHP Packages
+ mrlesmithjr.phpipam                               Ansible role to install/configure phpIPAM
+ msherron.php-debian-lucid                         PHP for RedHat/CentOS/Debian/Ubuntu.
+ mstantoncook.php                                  PHP for RedHat/CentOS/Debian/Ubuntu.
+ mstantoncook.php-memcached                        PHP Memcached support for Linux
+ mstantoncook.php-mysql                            PHP MySQL support for RedHat/CentOS and Debian/Ubuntu
+ mstantoncook.php-pecl                             PHP PECL extension installation.
+ mstantoncook.php-xdebug                           PHP XDebug for Linux
+ mstantoncook.php-xhprof                           PHP XHProf for Linux
+ nabello.install_pecl_php_extension                Ansible galaxy role to install PECL php extensions.
+ nabello.install_php                               Ansible galaxy role to install php.
+ naijavijayank.php                                 Role to setup php
+ nathanielks.newrelic-php                          An Ansible role for configuring New Relic PHP agent on Ubuntu Trusty
+ NBZ4live.php_fpm                                  Ansible role for installing and configuring php-fpm
+ nesh-younify.ansible-role-php                     PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ net2grid.php                                      PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ net2grid.php-mysql                                PHP MySQL support for Linux.
+ net2grid.php-pear                                 PHP PEAR library installation.
+ net2grid.php-pecl                                 PHP PECL extension installation.
+ net2grid.php-xdebug                               PHP XDebug for Linux
+ nickjj.phpfpm                                     Install and configure php-fpm.
+ NickWilde1990.php-brotli                          Build and install PHP Brotli extension
+ nishiki.phpfpm                                    Install and configure PHP-FPM
+ nixmomo.php5-fpm-apache2                          configures php5-fpm + apache2
+ nleutner.newrelic-php                             New Relic PHP Agent role / Application monitoring for RHEL/CentOS, Ubuntu, Debian
+ nobirocky.php_support                             your role description
+ nobreach.php                                      your description
+ nobreach.php_handlers                             your description
+ novuso.php-cli                                    PHP CLI for Ubuntu 14.04
+ novuso.php-ext                                    PHP Extensions for Ubuntu 14.04
+ novuso.php-fpm                                    PHP FPM for Ubuntu 14.04
+ novuso.phpmyadmin                                 phpMyAdmin for Ubuntu 14.04
+ nycrecords.php                                    PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ Oefenweb.php_56_cli                               Set up PHP 5.6 Cli in Ubuntu systems
+ Oefenweb.php_cli_ondrej                           Set up PHP Cli in Ubuntu systems (using Ondřej Surý's ppa)
+ Oefenweb.phpmemcachedadmin                        Set up phpMemcachedAdmin (Memcached server admin in php for monitoring and debugging)
+ Oefenweb.phpredis                                 Set up PhpRedis in Debian-like systems
+ Oefenweb.phpstorm                                 Set up PhpStorm
+ offtechnologies.phpvirtualbox                     Headless Virtualbox and phpVirtualbox on Ubuntu Server
+ oktapodia.phpunit                                 PHPUnit - The PHP Testing Framework
+ ontic.php                                         This role installs PHP on RedHat/CentOS and Debian/Ubuntu Linux servers.
+ openapphack.php                                   PHP for Debian/Ubuntu.
+ openapphack.php-mysql                             PHP MySQL support for Debian/Ubuntu
+ opichon.docker_phpmyadmin                         Install phpmyadmin as a docker container
+ opsta.php                                         Ansible role to install PHP
+ pabloguerino.php7                                 PHP7 (with fpm) on Debian
+ panickervinod.openapphack-php                     PHP for Debian/Ubuntu.
+ panickervinod.openapphack-php-memcached           PHP Memcached support for Linux
+ panickervinod.openapphack-php-mysql               PHP MySQL support for Debian/Ubuntu
+ panickervinod.openapphack-php-pecl                PHP PECL extension installation.
+ panickervinod.openapphack-php-xdebug              PHP XDebug for Linux
+ panickervinod.openapphack-php-xhprof              PHP XHProf for Linux
+ paulthed.php                                      PHP for RedHat/CentOS/Debian/Ubuntu.
+ paulthed.php-memcached                            PHP Memcached support for Linux
+ paulthed.phpmyadmin                               PHPMyAdmin installation for Linux
+ paulthed.php-mysql                                PHP MySQL support for RedHat/CentOS/Debian/Ubuntu
+ paulthed.php-pecl                                 PHP PECL extension installation.
+ paulthed.php-xdebug                               PHP XDebug for Linux
+ paulthed.php-xhprof                               PHP XHProf for Linux
+ FloeDesignTechnologies.php-cli                    Ansible role to install PHP Cli.
+ FloeDesignTechnologies.php-pear                   Install PEAR and PEAR packages.
+ FloeDesignTechnologies.php-pecl                   PHP PECL extension installation.
+ personnage.php                                    PHP for RedHat/CentOS/Debian/Ubuntu.
+ personnage.php-memcache                           PHP Memcache support for Linux
+ personnage.php-mysql                              PHP MySQL support for RedHat/CentOS and Debian/Ubuntu.
+ phansible.php                                     An Ansible Role that installs PHP on Ubuntu specifically created with Phansible in mind.
+ phizzl.php                                        PHP for Ubuntu/Debian.
+ phizzl.phpartifact                                Role to generate artifacts for PHP applications
+ phoenixgao.php                                    Install PHP
+ php-coder.jetty                                   Installs Jetty web-server from tarball
+ php-coder.nginx                                   Installs stable nginx version from repository at nginx.org
+ php-coder.oraclejdk                               Installs OracleJDK from WebUpd8 team's PPA
+ php-telegram-bot.php-telegram-bot                 Install and run PHP Telegram Bots.
+ phuysmans.php                                     
+ pixelart.phpstorm                                 Installs Jetbrains PhpStorm
+ pixelfusion.php7                                  php7 role
+ pkorobeinikov.php                                 PHP installation.
+ pkorobeinikov.php-xdebug                          PHP Xdebug installation.
+ plumelo.ansible_role_php_fpm                      Ansible role for installing and configuring php-fpm
+ praseodym.newrelic-php                            New Relic PHP agent
+ purplenetwork.php                                 Install one specific or more Php versions
+ purplenetwork.phpmyadmin                          PhpMyAdmin
+ pylabs.php                                        Install php packages
+ pylabs.php_fpmapps                                Setup multi php fpm apps
+ qianka.php-fpm                                    (an ansible role) install php-fpm
+ radamanth.php5-ansible                            Small role to install php5
+ ramiroto.php                                      Role for installing PHP
+ raptas.php                                        This role will install and configure php
+ reallyryansmith.php_webserver                     your description
+ renkeju.ansible_role_php_mysql                    PHP MySQL support for Linux.
+ revagomes.php-pecl                                PHP PECL extension installation.
+ revagomes.phpsh                                   A read-eval-print-loop for php http://www.phpsh.org/.
+ riaf.php5                                         This role installs and configures the php5.
+ robertdebock.php                                  Install and configure php on your system.
+ robertdebock.php_fpm                              The purpose of this role is to install and configure php_fpm on your system.
+ robertdebock.phpmyadmin                           Install and configure phpmyadmin on your system.
+ RobertoSolis.php                                  PHP for RedHat/CentOS/Debian/Ubuntu.
+ RobertoSolis.php-mysql                            PHP MySQL support for RedHat/CentOS and Debian/Ubuntu
+ superlumic.superlumic-php                         Ansible role to install PHP on OSX. This role is part of the Superlumic project that aims to simplify repeat computer setups on OSX, 10.10 and up.
+ rooty.phpmyadmin                                  phpMyAdmin installation for Linux
+ s2ansible.php                                     install php
+ s2ansible.phpbuild                                setup php-build
+ s2ansible.phpfpm                                  setup phpfpm
+ salandur.php                                      Manages PHP
+ salandur.php-apache                               Manages PHP configuration on Apache
+ samloh84.php                                      PHP
+ sansible.newrelic_agent_php                       Installs New Relic PHP Agent
+ sansible.newrelic_integration_php                 PHP NewRelic Integration
+ sansible.php                                      PHP and FPM installation
+ sansible.prometheus_phpfpm_exporter               Install Prometheus PHP FPM Exporter.
+ woodruff28.php                                    ansible role for installing php
+ ShadowKoBolt.php5-common                          Installs PHP5
+ shakahl.ansible-phpmyadmin                        Installs phpMyAdmin
+ shifteoops.apache_php_fpm_role                    apache-php-fpm for Ubuntu.
+ shifteoops.php_role                               PHP for Ubuntu.
+ shomatan.php-fpm                                  Installs and configures PHP FastCGI Process Manager.
+ shomatan.phpmyadmin                               Configures SELinux
+ softasap.sa-dev-phpstorm                          installs Oracle Java 6-7-8 + PHPSTORM  on ubuntu based box
+ softasap.sa_php_apache                            standalone role for php installation in apache module mode
+ softasap.sa-php-container                         Experimental alpine 3.3 based php 5 fpm container
+ softasap.sa-php-fpm                               Standalone role for PHP-FPM installation in fastcgi mode
+ softasap.sa-php-hhvm                              installs facebook's hhvm on ubuntu
+ softasap.sa-php-pharables                         helper role for global php pchar installations
+ solutionDrive.ansible-role-phpbrew                Role to install phpbrew on mac os
+ spitfast.php-fpm                                  Install php-fpm and php extensions.
+ stevenharradine.php                               PHP is a popular general-purpose scripting language that is popular in web development.
+ stuvusIT.php-fpm                                  Ansible php-fpm role
+ SuperNami.php-fpm                                 phpfpm
+ supertarto.php                                    Install and configure PHP, for Debian, with Ansible
+ supsy.phpfpm                                      Installation for phpfpm
+ swcc.ansible_simplesamlphp                        Install and configure SimpleSAMLphp
+ swcc.php-fpm                                      Ansible role for installing and configuring php-fpm
+ T2L.php                                           Install PHP.
+ telus.php                                         PHP is a popular general-purpose scripting language that is popular in web development.
+ telus.php7                                        PHP 7 is the latest version of general-purpose scripting language that is popular in web development.
+ Temelio.php_fpm                                   Ansible role to manage PHP-FPM installation and configuration
+ terbolous.php-fpm                                 Yet another php-fpm role for Ansible
+ thecarlhall.php5-fpm                              Ansible role for installing php5-fpm including php-apc and other helpful bits
+ themaniskshah.ansible_role_docker_php             This ansible role install common packages On Ubuntu, CentOS Amazon-Linux.
+ thom8.ansible-role-php                            PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ thom8.php-upload-progress                         PHP Upload progress for Linux.
+ thomaslorentsen.ansible_php7_fpm                  your description
+ beetboxvm.beetbox-cakephp                         CakePHP project role for beetbox.
+ thorian93.php                                     PHP Management
+ tigr1991.php71                                    your description
+ tkzy984.php56                                     install PHP 5.6
+ tkzy984.php70                                     your description
+ tobiasehlert.ansible_role_php                     PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ tovletoglou.php                                   PHP (5.4, 5.5, 5.6, 7.0, 7.1) using repositories (base, ius, webtatic, remi)
+ travis-south.app-php                              Undescribable
+ trombik.php                                       Manage php
+ trombik.php_fpm                                   Install PHP and php-fpm
+ TroodoNmike.php7-from-source                      PHP7 from source. Optional php7-fpm, opcache
+ tschifftner.php5-fpm                              Installs and configures php5-fpm on Debian/Ubuntu linux servers.
+ tschifftner.php7_fpm                              Installs and configures php7-fpm on Debian/Ubuntu linux servers.
+ tschifftner.phpmyadmin                            Installs and configures phpmyadmin on Debian/Ubuntu linux servers.
+ tschifftner.phpstorm                              Installs jetbrains phpstorm on Debian/Ubuntu linux servers.
+ Turgon37.php                                      This role install and configure PHP
+ TvL2386.php7-newrelic                             Installs New Relic PHP agent
+ TypistTech.trellis-newrelic-php                   Install New Relic PHP agent on Trellis servers
+ crocofdev.php-scl                                 An Ansible role to install PHP 5.5 from the Software Collections Library.
+ unixslayer.phpmetrics                             PhpMetrics, static analysis for PHP
+ unleashedtech.newrelic_php                        Installs the New Relic PHP agent
+ vahubert.php                                      PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ vaizard.mage_php                                  PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ vbotka.freebsd_php                                FreeBSD. Install and configure PHP.
+ viasite-ansible.php                               PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ viasite-ansible.php-versions                      Allows different PHP versions to be installed.
+ viasite-ansible.php-xdebug                        PHP XDebug for Linux
+ viniciusfs.php                                    Installs PHP 7 from remi repositories on CentOS 7
+ virhi.php                                         php for Debian/Ubuntu.
+ wosg-virtualenv.php                               PHP for Debian/Ubuntu.
+ wosg-virtualenv.php-memcached                     PHP Memcached support for Linux
+ wosg-virtualenv.php-mysql                         PHP MySQL support for Debian/Ubuntu
+ wosg-virtualenv.php-pecl                          PHP PECL extension installation.
+ wosg-virtualenv.php-xdebug                        PHP XDebug for Linux
+ wosg-virtualenv.php-xhprof                        PHP XHProf for Linux
+ visdmin.ansible_new_relic_php_agent               New relic php agent management for CentOS 7
+ visualcpu.el-php7                                 Ansible role to install and configure php7 on Enterprise Linux from webtatic repo
+ vivaserver.phpmyadmin                             Installs PHPMyAdmin on a sensible LAMP stack
+ vkill.php7-phalcon                                php7-phalcon
+ vonq.php56                                        PHP 5.6 YUM/PPA
+ votum.php                                         PHP for RedHat/CentOS/Debian/Ubuntu.
+ voycey.cakephp-ansible                            Deploy LEMP (PHP 7) on Ubuntu 16.04
+ vvgelder.ansible-role-php                         PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ wahidsadik.ansible-role-php                       An Ansible role to install PHP and integration with Apache2 (or nginx TBD)
+ weareinteractive.php5                             Installs and configures php5
+ weareinteractive.php5_newrelic                    Installs New Relic PHP agent
+ weareinteractive.php5_redis                       Installs and configures PHP Redis
+ webarchitect609.php_versions                      Allows different PHP versions to be installed.
+ webbylab.php                                      Ansible role for PHP environment(Composer) setup on ubuntu server
+ WebbyLab.php                                      Ansible role for PHP environment(Composer) setup on ubuntu server
+ webofmars.magephp                                 Install Magallanes/magephp on linux system with php already installed
+ webofmars.phpunit                                 Ansible role to install phpunit on Debian.
+ webstandardcss.phpunit                            A phpunit role dependent on geerlingguy.composer
+ weldpua2008.php                                   Ansible Role PHP
+ wroxbox.phpredis                                  phpredis to be used with Redis server.
+ wtanaka.apache_mod_php                            Install Apache, PHP and mod_php
+ wtanaka.newrelic_php                              Install Newrelic PHP agent
+ wtanaka.php52_fpm                                 Install php52-fpm
+ wtanaka.php56_fpm                                 Install php56-fpm
+ xcezx.php                                         install and configuration php
+ paulchubatyy.php                                  Deploy php-cli and php-fpm to your servers
+ xylodev.php                                       PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ Yannik.php                                        This role allows you to install php 5.6 and/or php 7.0 on ubuntu trusty and debian jessie.
+ Yannik.php-fpm                                    This role allows you to to configure php-fpm pools for both PHP 5.6 and 7.0 on the same system.
+ YasushiKobayashi.newrelic-php                     https://github.com/YasushiKobayashi/
+ yauh.jenkins-php                                  Ansible role to set up Jenkins for PHP
+ yfix.php                                          PHP for RedHat/CentOS/Debian/Ubuntu.
+ yfix.php-mysql                                    PHP MySQL support for RedHat/CentOS and Debian/Ubuntu
+ yfix.php-pecl                                     PHP PECL extension installation.
+ yfix.php-xdebug                                   PHP XDebug for Linux
+ yfix.php-xhprof                                   PHP XHProf for Linux
+ youyo.php                                         install php
+ youyo.phpbuild                                    setup php-build
+ youyo.phpfpm                                      setup phpfpm
+ ysz.phpbrew                                       Installs phpbrew
+ zengshing.ansible_role_php                        your description
+ zwischenloesung.ansible-php-fpm                   Install the FastCGI Process Manager
+ zxcvbnius.ubuntu-php                              Quick and easy php installer
+ onelove-roles.freebsd_php                         PHP installation for FreeBSD
+ draxalene.apache_php                              draxalene role for ansible to deploy Apache and PHP - FPM (by hopla.cloud)
+ webarch-coop.php                                  Ansible role for installing and configuring PHP on Debian Bullseye and Buster
+ msltwtf.php                                       Install a specific php version and extentions.
+ geoffreyvanwyk.php                                Installs, configures and extends the PHP programming language on Ubuntu servers. Multiple versions of PHP can be installed simultaneously on the same server.
+ robertdebock.php_unsupported                      Install an unsupported version of php on your system.
+ aacnp.php                                         Install and configure php on your system.
+ adityaprakash_bobby.ansible_role_php              Ansible role for installing PHP 7.0
+ afef0409.my_web_apache_php_ansible_role           your role description
+ aryanraj750.apache_php_webserver                  Conifgure linux system as webserver
+ bingo_soft.php_versions                           Allows different PHP versions to be installed.
+ blesson01.ansible_role_apache_php_mysql_user_web  Installing php7.3,mariadb,apache2
+ call_learning.php                                 PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ chriscroome.php                                   Ansible role for installing and configuring PHP on Debian Bookworm, Bullseye and Buster
+ chriscroome.phpmyadmin                            Ansible role for installing and upgrading phpMyAdmin on Debian
+ cyberitas.php72_ius                               Ansible role for installing php 72 on RHEL/CentOs
+ cyberitas.php72_remi                              Ansible role for installing php 72 on RHEL/CentOs
+ cyberitas.php73_remi                              Ansible role for installing php 7.3 on RHEL/CentOs from the Remi repository
+ cyberitas.php74_remi                              Ansible role for installing php 7.4 on RHEL/CentOs from the Remi repository
+ cyberitas.php80_remi                              Ansible role for installing php 8.0 on RHEL/CentOs from the Remi repository
+ devikababuraj.php_phpbins                         PHP demo role
+ dragonbe.php_fpm                                  A quick setup to run a remote PHP-FPM instance
+ entanet_devops.ansible_role_php                   PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ entanet_devops.php                                Common PHP role
+ entanet_devops.php_7_3_ppa                        PHP 7.3 ppa
+ gengxiankun.phpmyadmin                            Deploy the phpmyadmin service running under the container via ansible.
+ gnagano.ansible_cakephp3                          create cakephp3 new project
+ gnagano.ansible_cakephp3_auto_settings            setup cakephp3 project
+ gnagano.ansible_cakephp3_environments             cakephp_enviroments settings
+ gnagano.ansible_php_imagick                       install imagick for PHP
+ gnagano.ansible_phpmyadmin                        insall phpmyadmin and setting
+ hoplacloud.apache_php                             Hopla.cloud role for ansible to deploy Apache and PHP (FPM)
+ hoplacloud.nginx_php                              Hopla.cloud role for ansible to deploy Nginx and PHP (FPM)
+ irmoobear.php7                                    Compile PHP7 from source.
+ irmoobear.php_memcached                           Compile memcached extension for php 7.
+ irmoobear.php_redis                               Compile redis extension for php.
+ julien_langlois.php                               php installation and customization of php-fpm
+ kornkalle.ansible_php74_fpm                       Ansible Role for Installing php 7.4 fpm
+ leslie1sme.ansible_php70_role                     php installation for Linux(Ubuntu).
+ methorz.php                                       Ansible PHP role for Debian (incl. Sury repository and multiple pool support)
+ mrdatamapper.akademiano_php                       base role for php with phpbrew
+ myrostadler.centos7_php                           Install PHP
+ myrostadler.centos7_php_docker                    Install a PHP dockerised network in an apache wrapper
+ myrostadler.centos7_php_website                   Install a PHP website from a git repo on Centos7
+ nkakouros.ansible_php_dns                         Ansible role to install and configure PHP-DNS
+ oscaner.php_webserver                             PHP WebServer
+ postka.ansible_role_php                           Role for deploying PHP server and support packages for MySQL and FPM.
+ respheal.php_fpm                                  Modular Ansible Role for deploying and configuring PHP-FPM
+ shifteo_ops.apache_php_fpm_role                   apache-php-fpm for Ubuntu.
+ shifteo_ops.php_role                              PHP for Ubuntu.
+ siaoming.php_server                               Deploy apache httpd service with PHP enabled
+ stacktonic.ansible_role_php_versions              Allows different PHP versions to be installed.
+ sys_fs.php_fpm                                    This role installs php-fpm from sury.org on Debian and Ubuntu.
+ tpboyle.php                                       Installs and secures a PHP server.
+ ubzyhd.php                                        Ansible role to install PHP + PHP-FPM as well as any web counterparts
+ udelarinterior.configure_php_ini                  Ansible role to configure php.ini files on Debian servers
+ Vaizard.mage_php                                  PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ vandcarlos.php_aml2                               Task for install php on Amazon Linux 2
+ vineeth_pgmr.phphello                             your description
+ zewaren.ansible_role_freebsd_php_fpm              An ansible role to install and configure PHP-FPM on FreeBSD
+ shaneholloman.phps                                Allows different PHP versions to be installed.
+ xolyu.php                                         PHP installation and configuration
+ bagaswh.php                                       PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ shaneholloman.php                                 PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ RanithRam.apache_wp_php_install                   
+ LemonJelle.php                                    Installs PHP on a system.
+ LemonJelle.php-mysql                              Installs PHP-MySQL on a system.
+ aldodenhartog03.php                               installs php
+ aldodenhartog03.php-mysql                         installs php-mysql
+ inofix.ansible-php-fpm                            Install the FastCGI Process Manager
+ JeriJaflaum2.php                                  php
+ JeriJaflaum2.php_mysql                            php_Mysql
+ thystips.php_fpm_exporter                         Install php-fpm prometheus exporter
+ JelleBrouwer02.php                                your role description
+ JelleBrouwer02.php-mysql                          your role description
+ webdimension-develop.php                          your role description
+ DucksLock.apache_php                              Installeert Apache en PHP op een webserver.
+ BVossebelt.apache_php                             Installs apache, php, php-mysql and tries to start the apache server
+ S1186041.apache_php_mysql                         roles van week 4
+ farisc0de.php                                     PHP for RedHat/CentOS/Fedora/Debian/Ubuntu.
+ zee-tek.ansible-role-zee_php                      your role description
+ zee-tek.zee-php                                   your role description
+ KevinSchottert.php                                Installeert en configureert PHP op Ubuntu
+ KevinSchottert.php_mysql                          Installeert en configureert php_mysql op Ubuntu
+ secnigma.php-versions-cohabitat                   Allows different PHP versions to be installed, without purging others.
+ softasap.sa_php_fpm                               Standalone role for PHP-FPM installation in fastcgi mode
+ boutetnico.php                                    Install and configure PHP.
+ vihuhool.php-versions                             Allows different PHP versions to be installed.
+ mina-amin.php_nginx_mariadb                       Install and configure Laravel application with Nginx, PHP, and MariaDB.
+ oxess.php_ioncube                                 Ansible role for installing and configuring ionCube Loader for PHP. Supports PHP 7.1, 7.2, 7.4, 8.1, 8.2, 8.3, 8.4 (PHP 8.0 is NOT supported by ionCube). Integrates with geerlingguy.php role.
+
+ punktde.php                                       php role for Proserver
+ clouddrove.docker-php-node-exporter               This ansible role is used to install Redis server into Docker.
+ hamidyousefi.php                                  An Ansible role for setting up a basic PHP environment on Debian systems.

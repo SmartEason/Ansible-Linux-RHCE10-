@@ -1,0 +1,10 @@
+---
+#20260409 11327110 ceUeval5
+- hosts: dev
+  tasks:
+  - name: install package
+    ansible.builtin.dnf:
+      name:
+      - php
+      - mariadb
+      state: latest

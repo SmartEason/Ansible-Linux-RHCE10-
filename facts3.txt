@@ -1,0 +1,41 @@
+        "ansible_all_ipv4_addresses": [
+            "192.168.122.12"
+        ],
+        "ansible_all_ipv6_addresses": [
+            "2001:ac18::5054:ff:fe59:ab35",
+--
+        "ansible_default_ipv4": {
+            "address": "192.168.122.12",
+            "alias": "enp1s0",
+            "broadcast": "192.168.122.255",
+            "gateway": "192.168.122.1",
+--
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "off [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+--
+            "ipv4": {
+                "address": "192.168.122.12",
+                "broadcast": "192.168.122.255",
+                "netmask": "255.255.255.0",
+                "network": "192.168.122.0",
+--
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "on [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+--
+            "ipv4": {
+                "address": "127.0.0.1",
+                "broadcast": "",
+                "netmask": "255.0.0.0",
+                "network": "127.0.0.0",
+--
+            "ipv4": [
+                "127.0.0.0/8",
+                "127.0.0.1",
+                "192.168.122.12"
+            ],

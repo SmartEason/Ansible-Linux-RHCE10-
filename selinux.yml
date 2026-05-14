@@ -1,0 +1,10 @@
+---
+#20260409 11327110 ceUeval5
+- name: Configure SELinux policy and state
+  hosts: all
+  become: yes
+  vars:
+    selinux_state: enforcing
+    selinux_policy: targeted
+  roles:
+    - rhel.system_roles.selinux

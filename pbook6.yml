@@ -1,0 +1,20 @@
+---
+#20260409 11327110 ceUeval5
+- name: Practice 6 - Enhanced Block for dev
+  hosts: dev test
+  tasks:
+    - name: Install xz and gzip
+      ansible.builtin.dnf:
+        name: [xz, gzip]
+        state: present
+
+    - block:
+        - name: Update openssh
+          ansible.builtin.dnf:
+            name: openssh
+            state: latest
+        - name: Install vim
+          ansible.builtin.dnf:
+            name: vim
+            state: present
+      when: "'dev' in group_names"

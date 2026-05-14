@@ -1,0 +1,8 @@
+---
+#20260423 11327110 ceUeval7
+- name: 修改特定主機的 /etc/issue 內容
+  hosts: all
+  tasks:
+    - name: 當主機為 dev 時，寫入 Developcc 與 IPV4
+      shell: echo "Developcc {{ ansible_default_ipv4.address }}" > /etc/issue
+      when: inventory_hostname == 'kvm11'

@@ -1,0 +1,10 @@
+---
+#20260423 11327110 ceUeval7
+- name: 執行 dev 主機的 shell 任務
+  hosts: dev
+  become: yes
+  tasks:
+    - name: 切換目錄並執行 grep 導向至 os11s.txt
+      shell: grep ID /etc/os-release > os11s.txt
+      args:
+        chdir: "{{ dir }}"

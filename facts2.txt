@@ -1,0 +1,19 @@
+kvm12 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_default_ipv4": {
+            "address": "192.168.122.12",
+            "alias": "enp1s0",
+            "broadcast": "192.168.122.255",
+            "gateway": "192.168.122.1",
+            "interface": "enp1s0",
+            "macaddress": "52:54:00:59:ab:35",
+            "mtu": 1500,
+            "netmask": "255.255.255.0",
+            "network": "192.168.122.0",
+            "prefix": "24",
+            "type": "ether"
+        },
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false
+}

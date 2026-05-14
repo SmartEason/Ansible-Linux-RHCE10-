@@ -1,0 +1,5 @@
+# Variables report
+HOST=inventoryhostname
+MEMORY=memory_in_MB
+VDA_SIZE=disk_vda_size
+KERNEL=kernel_version

@@ -1,0 +1,18 @@
+---
+- hosts: balancers
+  tasks:
+  - name: unMount device
+    ansible.posix.mount:
+      path: /newpart
+      state: absent
+
+  - name: Remove a directory
+    ansible.builtin.file:
+      path: /newpart
+      state: absent
+
+  - name: Remove a primary partition
+    community.general.parted:
+      device: /dev/vdb
+      number: 1
+      state: absent

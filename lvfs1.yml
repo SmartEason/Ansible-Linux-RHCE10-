@@ -1,0 +1,39 @@
+---
+# 20260430 11327110 ceUeval8
+- hosts: all
+  become: yes
+  tasks:
+    - name: Debug if VG fieldwork does not exist
+      ansible.builtin.debug:
+        msg: "VG fieldwork does not exist 102"
+      when: ansible_lvm.vgs.fieldwork is not defined
+
+    - name: LVM Provisioning Block
+      block:
+        - name: Create a logical volume of 202M
+          community.general.lvol:
+            vg: fieldwork
+            lv: datac
+            size: 202M
+            state: present
+
+      rescue:
+        - name: Output error message for 202M
+          ansible.builtin.debug:
+            msg: "Could not create LV data of that size 202"
+
+        - name: Create a logical volume of 102M
+          community.general.lvol:
+            vg: fieldwork
+            lv: datac
+            size: 102M
+            state: present
+
+      always:
+        - name: Create a ext4 filesystem on /dev/fieldwork/datac
+          community.general.filesystem:
+            fstype: ext4
+            dev: /dev/fieldwork/datac
+            force: yes
+          when: ansible_lvm.vgs.fieldwork is defined
+      when: ansible_lvm.vgs.fieldwork is defined

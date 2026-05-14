@@ -1,0 +1,16 @@
+---
+#20260423 11327110 ceUeval7
+- name: 依據不同群組寫入網域資訊到 /etc/domac
+  hosts: all
+  tasks:
+    - name: 寫入 Developcc 網域 (dev 群組)
+      shell: echo "Developcc {{ ansible_domain }}" > /etc/domac
+      when: inventory_hostname in groups['dev'] | default([])
+
+    - name: 寫入 Test 網域 (test 群組)
+      shell: echo "Test {{ ansible_domain }}" > /etc/domac
+      when: inventory_hostname in groups['test'] | default([])
+
+    - name: 寫入 Production 網域 (prod 群組)
+      shell: echo "Production {{ ansible_domain }}" > /etc/domac
+      when: inventory_hostname in groups['prod'] | default([])

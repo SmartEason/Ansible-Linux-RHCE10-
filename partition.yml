@@ -1,0 +1,34 @@
+---
+# 20260423 11327110 ceUeval7
+- hosts: balancers
+  become: yes
+  tasks:
+    - name: Create a new primary partition with a size of 1.3GiB
+      parted:
+        device: /dev/vdb
+        number: 1
+        state: present
+        part_type: primary
+        part_end: 1.3GiB
+
+    - name: Ensure dosfstools is installed for vfat
+      package:
+        name: dosfstools
+        state: present
+
+    - name: Create a vfat filesystem
+      filesystem:
+        fstype: vfat
+        dev: /dev/vdb1
+
+    - name: Create a directory if it does not exist
+      file:
+        path: /newmnt
+        state: directory
+
+    - name: Mount up device
+      mount:
+        path: /newmnt
+        src: /dev/vdb1
+        fstype: vfat
+        state: mounted

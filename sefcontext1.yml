@@ -1,0 +1,19 @@
+---
+#20260507 11327110 ceUeval9
+- name: NFS SELinux Context Configuration
+  hosts: dev
+  become: true
+  tasks:
+    - name: Ensure management tools are installed
+      ansible.builtin.dnf:
+        name: policycoreutils-python-utils
+        state: present
+
+    - name: Set fcontext for nfsdir (/nfsd)
+      community.general.sefcontext:
+        target: '/nfsd(/.*)?'
+        setype: public_content_t
+        state: present
+
+    - name: Run restorecon on nfsd
+      ansible.builtin.command: restorecon -irv /nfsd

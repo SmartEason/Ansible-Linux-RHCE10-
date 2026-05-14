@@ -1,0 +1,16 @@
+---
+#20260409 11327110 ceUeval5
+- hosts: dev test
+  tasks:
+  - name: install package
+    ansible.builtin.dnf: 
+      name:
+      - php
+      - mariadb
+      state: latest
+  - block:
+    - name: install the '@RPM Development Tools' package group
+      ansible.builtin.dnf:
+        name: "@RPM Development Tools"
+        state: present
+    when: "'test' in group_names"

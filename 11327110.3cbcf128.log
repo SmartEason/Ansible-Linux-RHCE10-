@@ -1,0 +1,53 @@
+drwxr-xr-x. 2 root root 6 May 14 13:14 /tmp/ceUeval9/11327110
+1-5 91 11327110 李塬閎
+ceUeval8 PASS
+3cbcf128-185a-cc46-9455-d352fd7136ed
+1-5 91 11327110 李塬閎
+pubip=120.110.10.84
+start=2026-05-07 13:30
+evalstart=2026-05-14 13:14:47
+deadline=2026-05-28 13:30
+./ceUeval9 
+zflag=63,2,0,18,2,0,1
+download=http://dywang.csie.cyut.edu.tw/dywang/download
+ceUpara9.sh
+--------BEGIN HOST EVAL------------------
+[38;5;196mceUeval9_host.ceuser_1.sefcontext.yml:NC.0[0m
+[38;5;196mceUeval9_host.ceuser_2.sefcontext1.yml:NC.0[0m
+[38;5;196mceUeval9_host.ceuser_3.linf1.yml:NC.0[0m
+[38;5;196mceUeval9_host.ceuser_4.facts1:1[0m
+Files /root/.ceUeval9/facts2 and facts2.txt differ
+[38;5;196mceUeval9_host.ceuser_5.facts2:1[0m
+grep: /root/.ceUeval9/facts1: No such file or directory
+Files /root/.ceUeval9/facts3 and facts3.txt differ
+[38;5;196mceUeval9_host.ceuser_6.facts3:1[0m
+[38;5;196mceUeval9_host.ceuser_7.report.yml:NC.0[0m
+[38;5;196mceUeval9_host.ceuser_8.report.a.yml:NC.0[0m
+[38;5;196mceUeval9_host.ceuser_9.report.b.yml:NC.0[0m
+[38;5;196mceUeval9_host.ceuser_10.report1.yml:NC.0[0m
+[38;5;196mceUeval9_host.ceuser_11.report1.a.yml:NC.0[0m
+[38;5;196mceUeval9_host.ceuser_12.report1.b.yml:NC.0[0m
+[38;5;196mceUeval9_host.ceuser_13.vfile.1:1[0m
+[38;5;196mceUeval9_host.ceuser_14.vfile.1.pw:1[0m
+ceUeval9_host.ceuser_15.passwd:0
+ceUeval9_host.ceuser_16.passwd.pw:0
+ceUeval9_host.ceuser_17.rkvfile:0
+ceUeval9_host.ceuser_18.rkvfile1:0
+ceUeval9_host.ceuser_19.rkpwlist:0
+ceUeval9_host.ceuser_20.rkpassword:0
+--------END HOST EVAL------------------
+--------BEGIN KVM11 EVAL------------------
+--------END KVM11 EVAL------------------
+--------BEGIN KVM12 EVAL------------------
+--------END KVM12 EVAL------------------
+--------BEGIN KVM13 EVAL------------------
+--------END KVM13 EVAL------------------
+--------BEGIN KVM14 EVAL------------------
+--------END KVM14 EVAL------------------
+--------BEGIN KVM15 EVAL------------------
+--------END KVM15 EVAL------------------
+[48;5;226m1-5 91 11327110 李塬閎	(6/20), Keep fighting![0m
+start=2026-05-07 13:30
+evalstart=2026-05-14 13:14:46
+evalend=2026-05-14 13:15:18
+deadline=2026-05-28 13:30

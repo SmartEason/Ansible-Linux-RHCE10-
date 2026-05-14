@@ -1,0 +1,10 @@
+---
+#20260430 11327110 ceUeval8
+- name: Create group webtest
+  hosts: dev
+  become: yes
+  tasks:
+    - name: Ensure group webtest exists
+      group:
+        name: webc
+        state: present

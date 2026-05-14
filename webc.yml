@@ -1,0 +1,27 @@
+---
+# 20260430 11327110 ceUeval8
+- hosts: dev
+  become: yes
+  tasks:
+    - name: Create group webc
+      ansible.builtin.group:
+        name: webc
+        state: present
+
+    - name: Create directory /webc
+      ansible.builtin.file:
+        path: /webc
+        state: directory
+        group: webc
+        mode: '2775'
+
+    - name: Create symbolic link for webc
+      ansible.builtin.file:
+        src: /webc
+        dest: /var/www/html/webc
+        state: link
+
+    - name: Create index.html with hostname
+      ansible.builtin.copy:
+        dest: /webc/index.html
+        content: "WebTest on {{ ansible_hostname }}"

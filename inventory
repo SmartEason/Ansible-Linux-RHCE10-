@@ -1,0 +1,15 @@
+[dev]
+kvm11
+
+[test]
+kvm12
+
+[prod]
+kvm13
+kvm14
+
+[balancers]
+kvm15
+
+[webservers:children]
+prod

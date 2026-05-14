@@ -1,0 +1,28 @@
+---
+#20260430 11327110 ceUeval8
+- name: Configure webc environment
+  hosts: dev
+  become: yes
+  tasks:
+    - name: Create group webc
+      group:
+        name: webc
+        state: present
+
+    - name: Create directory /webc with SGID
+      file:
+        path: /webc
+        state: directory
+        group: webc
+        mode: '2775'
+
+    - name: Create link /var/www/html/webc
+      file:
+        src: /webc
+        dest: /var/www/html/webc
+        state: link
+
+    - name: Create index.html with hostname
+      copy:
+        content: "WebTest on {{ ansible_hostname }}\n"
+        dest: /webc/index.html

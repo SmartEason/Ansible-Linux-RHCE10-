@@ -1,0 +1,11 @@
+---
+#20260416 11327110 ceUeval6
+- name: Generate hosts2 file
+  hosts: all
+  become: yes
+  tasks:
+    - name: Create /opt/mycri using hosts2 template
+      template:
+        src: hosts2.j2
+        dest: /opt/mycri
+      when: "'test' in group_names"

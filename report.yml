@@ -1,0 +1,20 @@
+---
+#20260507 11327110 ceUeval9
+- name: Report variables
+  hosts: test
+  tasks:
+    - name: Copy report.orig to report.txt
+      ansible.builtin.copy:
+        src: report.orig
+        dest: /root/report.txt
+
+    - name: Replace with facts
+      ansible.builtin.lineinfile:
+        path: /root/report.txt
+        regexp: "^{{ item.key }}="
+        line: "{{ item.key }}={{ item.value }}"
+      loop:
+        - { key: "HOST", value: "{{ inventory_hostname }}" }
+        - { key: "MEMORY", value: "{{ ansible_memtotal_mb }}" }
+        - { key: "VDA_SIZE", value: "{{ ansible_devices.vda.size | default('NONE') }}" }
+        - { key: "KERNEL", value: "{{ ansible_kernel }}" }

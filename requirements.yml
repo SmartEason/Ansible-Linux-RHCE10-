@@ -1,0 +1,7 @@
+---
+#20260416 11327110 ceUeval6
+- src: http://dywang.csie.cyut.edu.tw/materials/haproxy.tar 
+  name: balancer
+
+- src: http://dywang.csie.cyut.edu.tw/materials/phpinfo.tar
+  name: phpinfo

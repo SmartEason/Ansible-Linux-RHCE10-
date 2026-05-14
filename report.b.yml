@@ -1,0 +1,14 @@
+---
+#20260507 11327110 ceUeval9
+- name: 修改 dyw-release 內容
+  hosts: test
+  tasks:
+    - name: 迴圈修改 release 資訊
+      lineinfile:
+        path: /etc/dyw-release
+        regexp: "^{{ item.key }}="
+        line: '{{ item.key }}="{{ item.value }}"'
+      loop:
+        - { key: 'HOME_URL', value: 'https://dywang.csie.cyut.edu.tw/' }
+        - { key: 'ID', value: "{{ ansible_distribution }}" }
+        - { key: 'VERSION_ID', value: "{{ ansible_distribution_version }}" }

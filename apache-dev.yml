@@ -1,0 +1,20 @@
+---
+#20260430 11327110 ceUeval8
+- name: Install and Start Apache
+  hosts: dev
+  become: yes
+  roles:
+    - apache
+  tasks:
+    - name: 確保 Apache 正在執行並開機啟動
+      ansible.builtin.service:
+        name: httpd  # RHEL/CentOS 通常是 httpd
+        state: started
+        enabled: yes
+
+    - name: 開放防火牆 HTTP 服務
+      ansible.posix.firewalld:
+        service: http
+        permanent: yes
+        state: enabled
+        immediate: yes

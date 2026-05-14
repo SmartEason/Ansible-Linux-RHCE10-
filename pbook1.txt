@@ -1,0 +1,17 @@
+
+PLAY [dev] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [kvm11]
+
+TASK [Run ls -l /bin/passwd] ***************************************************
+changed: [kvm11]
+
+TASK [Display result] **********************************************************
+ok: [kvm11] => {
+    "shell_result.stdout": "-rwsr-xr-x. 1 root root 91408 May 26  2025 /bin/passwd"
+}
+
+PLAY RECAP *********************************************************************
+kvm11                      : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

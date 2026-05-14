@@ -1,0 +1,26 @@
+---
+#20260507 11327110 ceUeval9
+- name: lineinfile practice
+  hosts: test
+  tasks:
+  - name: create /etc/dyw-release
+    ansible.builtin.shell:
+      cmd: cat /etc/os-release > /etc/dyw-release
+
+  - name: modify HOME_URL
+    ansible.builtin.lineinfile:
+      path: /etc/dyw-release
+      regexp: '^HOME_URL='
+      line: 'HOME_URL="https://dywang.csie.cyut.edu.tw/"'
+
+  - name: remove wheel
+    ansible.builtin.lineinfile:
+      path: /etc/sudoers
+      state: absent
+      regexp: '^%wheel'
+
+  - name: create /tmp/linf1
+    ansible.builtin.lineinfile:
+      path: /tmp/linf1
+      line: linf1_test
+      create: yes

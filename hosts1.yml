@@ -1,0 +1,11 @@
+---
+#20260416 11327110 ceUeval6
+- name: Generate hosts file
+  hosts: all
+  become: yes
+  tasks:
+    - name: Create /opt/myhc using template
+      template:
+        src: hosts.j2
+        dest: /opt/myhc
+      when: "'test' in group_names"

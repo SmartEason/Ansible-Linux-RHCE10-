@@ -1,0 +1,11 @@
+---
+#20260409 11327110 ceUeval5
+- name: Configure time synchronization
+  hosts: all
+  become: yes
+  vars:
+    timesync_ntp_servers:
+      - hostname: 192.168.122.1
+        iburst: yes
+  roles:
+    - rhel.system_roles.timesync

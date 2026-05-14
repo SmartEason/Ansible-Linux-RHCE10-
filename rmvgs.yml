@@ -1,0 +1,7 @@
+---
+- hosts: dev
+  tasks:
+  - name: Remove a volume group with name vg1
+    community.general.lvg:
+      vg: vg1
+      state: absent

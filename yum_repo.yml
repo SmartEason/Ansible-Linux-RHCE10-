@@ -1,0 +1,22 @@
+---
+# 20260326 11327110 ceUeval4
+- hosts: all
+  become: yes
+  tasks:
+    - name: Create DYW_BASEc repository
+      yum_repository:
+        name: "DYW_BASEc"
+        description: "DYW basec software"
+        baseurl: "http://dywang.csie.cyut.edu.tw/alma10/BaseOS"
+        gpgcheck: yes
+        gpgkey: "http://dywang.csie.cyut.edu.tw/materials/RPM-GPG-KEY-AlmaLinux-10"
+        enabled: yes
+
+    - name: Create DYW_STREAMc repository
+      yum_repository:
+        name: "DYW_STREAMc"
+        description: "DYW streamc software"
+        baseurl: "http://dywang.csie.cyut.edu.tw/alma10/AppStream"
+        gpgcheck: yes
+        gpgkey: "http://dywang.csie.cyut.edu.tw/materials/RPM-GPG-KEY-AlmaLinux-10"
+        enabled: yes

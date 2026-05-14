@@ -1,0 +1,27 @@
+---
+#20260507 11327110 ceUeval9
+- name: Web SELinux settings
+  hosts: dev
+  tasks:
+    - name: Install management tools
+      ansible.builtin.dnf:
+        name: policycoreutils-python-utils
+        state: present
+
+    - name: Set fcontext for webc
+      community.general.sefcontext:
+        target: '/webc(/.*)?'
+        setype: httpd_sys_content_t
+        state: present
+
+    - name: Set fcontext for webuc
+      community.general.sefcontext:
+        target: '/webuc(/.*)?'
+        setype: httpd_sys_content_t
+        state: present
+
+    - name: Apply restorecon
+      ansible.builtin.command: "restorecon -irv {{ item }}"
+      loop:
+        - /webc
+        - /webuc

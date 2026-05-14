@@ -1,0 +1,22 @@
+---
+# 20260430 11327110 ceUeval8
+- hosts: balancers
+  become: yes
+  tasks:
+    - name: Remove logical volume lv_c
+      community.general.lvol:
+        vg: vg_c
+        lv: lv_c
+        state: absent
+        force: yes
+
+    - name: Remove volume group vg_c
+      community.general.lvg:
+        vg: vg_c
+        state: absent
+
+    - name: Remove partition on /dev/vdc
+      community.general.parted:
+        device: /dev/vdc
+        number: 1
+        state: absent

@@ -1,0 +1,75 @@
+---
+#20260430 11327110 ceUeval8
+- hosts: balancers
+  become: yes
+  vars:
+    partsize1: "800MiB" 
+  tasks:
+    - name: Gather LVM facts
+      setup:
+        filter: ansible_lvm
+
+    - name: Remove all LVs in VG fieldwork
+      lvol:
+        vg: fieldwork
+        lv: "{{ item.key }}"
+        state: absent
+        force: yes
+      loop: "{{ ansible_lvm['lvs'] | dict2items | selectattr('value.vg', 'equalto', 'fieldwork') | list }}"
+      ignore_errors: yes
+
+    - name: Check if disk /dev/vdY exists
+      stat:
+        path: /dev/vdy
+      register: disk_vdy
+
+    - name: Output message if /dev/vdY does not exist
+      debug:
+        msg: "Disk /dev/vdY does not exist"
+      when: not disk_vdy.stat.exists
+
+    - name: Partitioning and Mounting Logic
+      block:
+        - name: Create a new primary partition with a size of 1.3GiB
+          parted:
+            device: /dev/vdb
+            number: 1
+            state: present
+            part_type: primary
+            part_end: 1.3GiB
+
+      rescue:
+        - name: Output error message for partition size
+          debug:
+            msg: "Could not create partition of that size"
+
+        - name: Create partition with fallback size (partsize1)
+          parted:
+            device: /dev/vdb
+            number: 1
+            state: present
+            part_type: primary
+            part_end: "{{ partsize1 }}"
+
+      always:
+        - name: Ensure dosfstools is installed for vfat
+          package:
+            name: dosfstools
+            state: present
+
+        - name: Create a vfat filesystem
+          filesystem:
+            fstype: vfat
+            dev: /dev/vdb1
+            force: yes
+        - name: Create a directory if it does not exist
+          file:
+            path: /newmnt
+            state: directory
+
+        - name: Mount up device
+          mount:
+            path: /newmnt
+            src: /dev/vdb1
+            fstype: vfat
+            state: mounted

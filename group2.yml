@@ -1,0 +1,10 @@
+---
+#20260430 11327110 ceUeval8
+- name: 建立自定義群組
+  hosts: test
+  become: yes
+  tasks:
+    - name: Create group from extra vars
+      ansible.builtin.group:
+        name: "{{ gname }}"
+        state: present

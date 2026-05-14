@@ -1,0 +1,11 @@
+---
+# 20260326 11327110 ceUeval4
+- hosts: dev
+  tasks:
+    - name: Run ls -l /bin/passwd
+      shell: "ls -l /bin/passwd"
+      register: shell_result
+
+    - name: Display result
+      debug:
+        var: shell_result.stdout

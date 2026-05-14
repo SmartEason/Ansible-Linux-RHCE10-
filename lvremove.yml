@@ -1,0 +1,9 @@
+---
+- hosts: dev
+  tasks:
+  - name: Remove the logical volume.
+    community.general.lvol:
+      vg: fieldwork
+      lv: test
+      state: absent
+      force: true

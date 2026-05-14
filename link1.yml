@@ -1,0 +1,11 @@
+---
+#20260430 11327110 ceUeval8
+- name: Create symlink based on variable
+  hosts: dev
+  become: yes
+  tasks:
+    - name: Create link for webuc
+      file:
+        src: "{{ link1 }}"
+        dest: /var/www/html/webuc
+        state: link

@@ -1,0 +1,11 @@
+---
+# 20260430 11327110 ceUeval8
+- hosts: dev
+  tasks:
+    - name: Create a file with specific owner and permissions
+      ansible.builtin.file:
+        path: "{{ file1 }}"
+        state: touch
+        owner: ceuser
+        group: ceuser
+        mode: '0660'

@@ -1,0 +1,27 @@
+---
+#20260507 11327110 ceUeval9
+- name: Report 1A Task
+  hosts: test
+  tasks:
+    - name: Copy report1.orig to report1.a.txt
+      ansible.builtin.copy:
+        src: report1.orig
+        dest: /root/report1.a.txt
+
+    - name: Insert DATE after HOST
+      ansible.builtin.lineinfile:
+        path: /root/report1.a.txt
+        insertafter: '^HOST='
+        line: "DATE={{ ansible_date_time.date }}"
+
+    - name: Fill facts with default NONE
+      ansible.builtin.lineinfile:
+        path: /root/report1.a.txt
+        regexp: "^{{ item.key }}="
+        line: "{{ item.key }}={{ item.value }}"
+      loop:
+        - { key: "HOST", value: "{{ inventory_hostname | default('NONE') }}" }
+        - { key: "BIOS", value: "{{ ansible_bios_version | default('NONE') }}" }
+        - { key: "VDA_SIZE", value: "{{ ansible_devices.vda.size | default('NONE') }}" }
+        - { key: "VDC_SIZE", value: "{{ ansible_devices.vdc.size | default('NONE') }}" }
+        - { key: "OS", value: "{{ ansible_os_family | default('NONE') }}" }

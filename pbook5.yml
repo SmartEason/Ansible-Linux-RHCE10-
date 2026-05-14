@@ -1,0 +1,18 @@
+---
+#20260409 11327110 ceUeval5
+- name: Practice 5 - Block and Condition
+  hosts: dev test
+  tasks:
+    - name: Install xz and gzip
+      ansible.builtin.dnf:
+        name:
+          - xz
+          - gzip
+        state: present
+
+    - block:
+        - name: Install vim for dev
+          ansible.builtin.dnf:
+            name: vim
+            state: present
+      when: "'dev' in group_names"

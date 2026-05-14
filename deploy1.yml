@@ -1,0 +1,8 @@
+---
+#20260409 11327110 ceUeval5
+- hosts: dev
+  tasks:
+    - name: Install the latest version of ...
+      ansible.builtin.dnf:
+        name: "{{item}}"
+        state: latest

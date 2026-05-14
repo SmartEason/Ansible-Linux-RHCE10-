@@ -1,0 +1,5 @@
+total 0
+drwxr-xr-x. 3 ceuser ceuser 19 Apr  9 15:18 ansible
+drwxr-xr-x. 3 ceuser ceuser 21 Apr  9 15:18 community
+drwxr-xr-x. 3 ceuser ceuser 23 Apr  9 15:43 mynmspace
+drwxr-xr-x. 3 ceuser ceuser 26 Apr  9 15:18 rhel

@@ -1,0 +1,22 @@
+---
+#20260416 11327110 ceUeval6
+- name: Configure logrotate for test hosts
+  hosts: test
+  become: yes
+  roles:
+    - role: arillso.logrotate
+      vars:
+        # 參考 arillso.logrotate 的 README Example Playbook 格式
+        logrotate_options:
+          - weekly
+          - rotate 4
+          - create
+          - dateext
+        logrotate_scripts:
+          - name: example-log
+            path: /var/log/example.log
+            options:
+              - daily
+              - rotate 7
+              - missingok
+              - compress

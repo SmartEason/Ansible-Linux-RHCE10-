@@ -1,0 +1,10 @@
+---
+#20260409 11327110 ceUeval5
+- name: List files using loop
+  hosts: dev
+  tasks:
+    - name: Shell ls command with loop
+      shell: "ls -l {{ item }}"
+      loop:
+        - "{{ f1 }}"
+        - "{{ f2 }}"

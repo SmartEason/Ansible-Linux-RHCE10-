@@ -1,0 +1,17 @@
+---
+#20260409 11327110 ceUeval5
+- name: Manage package via variable
+  hosts: dev
+  become: yes
+  tasks:
+    - name: Remove package {{ item }}
+      dnf:
+        name: "{{ item }}"
+        state: absent
+      notify: install item
+
+  handlers:
+    - name: install item
+      dnf:
+        name: "{{ item }}"
+        state: present

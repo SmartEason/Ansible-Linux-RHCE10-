@@ -1,0 +1,6 @@
+# Variables report
+HOST=inventoryhostname
+BIOS=BIOS_version
+VDA_SIZE=disk_vda_size
+VDC_SIZE=disk_vdc_size
+OS=os_family

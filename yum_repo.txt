@@ -1,0 +1,31 @@
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [kvm15]
+ok: [kvm13]
+ok: [kvm12]
+ok: [kvm11]
+ok: [kvm14]
+
+TASK [Create DYW_BASEc repository] *********************************************
+ok: [kvm15]
+ok: [kvm14]
+ok: [kvm12]
+ok: [kvm13]
+ok: [kvm11]
+
+TASK [Create DYW_STREAMc repository] *******************************************
+ok: [kvm12]
+ok: [kvm11]
+ok: [kvm15]
+ok: [kvm13]
+ok: [kvm14]
+
+PLAY RECAP *********************************************************************
+kvm11                      : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+kvm12                      : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+kvm13                      : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+kvm14                      : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+kvm15                      : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

@@ -1,0 +1,31 @@
+---
+# 20260430 11327110 ceUeval8
+- hosts: balancers
+  become: yes
+  tasks:
+    - name: Create a new primary partition for LVM using /dev/vdc
+      community.general.parted:
+        device: /dev/vdc
+        number: 1
+        flags: [ lvm ]
+        state: present
+
+    - name: Create a volume group named vg_c with pesize 4M
+      community.general.lvg:
+        vg: vg_c
+        pvs: /dev/vdc1
+        pesize: 4
+
+    - name: Create a logical volume named lv_c with size 110M
+      community.general.lvol:
+        vg: vg_c
+        lv: lv_c
+        size: 110
+        state: present
+        force: yes
+
+    - name: Format the logical volume as vfat
+      community.general.filesystem:
+        fstype: vfat
+        dev: /dev/vg_c/lv_c
+        force: yes

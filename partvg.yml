@@ -1,0 +1,15 @@
+---
+- hosts: dev
+  tasks:
+  - name: Create a new primary partition for LVM
+    community.general.parted:
+      device: /dev/vdb
+      number: 1
+      flags: [ lvm ]
+      state: present
+
+  - name: Create a volume group on top of /dev/vdb1
+    community.general.lvg:
+      vg: vg1
+      pvs: /dev/vdb1
+      pesize: 8

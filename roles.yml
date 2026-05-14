@@ -1,0 +1,16 @@
+---
+#20260423 11327110 ceUeval7
+- name: install httpd
+  hosts: webservers
+  roles:
+  - apache
+
+- name: use balancer
+  hosts: balancers
+  roles:
+  - balancer
+
+- name: hello php
+  hosts: webservers
+  roles:
+  - phpinfo

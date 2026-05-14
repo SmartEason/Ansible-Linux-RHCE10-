@@ -1,0 +1,15 @@
+---
+#20260423 11327110 ceUeval7
+- hosts: prod balancers
+  tasks:
+    - name: /dev/vda5 存在時，grep os-release 到 osarc.txt
+      ansible.builtin.shell: 
+        cmd: "grep ID /etc/os-release > osarc.txt"
+        chdir: "{{ dir }}"
+      when: ansible_devices.vda.partitions.vda5 is defined
+
+    - name: /dev/vda5 不存在時，grep profile 到 osarc.txt
+      ansible.builtin.shell: 
+        cmd: "grep ID /etc/profile > osarc.txt"
+        chdir: "{{ dir }}"
+      when: ansible_devices.vda.partitions.vda5 is not defined

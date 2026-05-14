@@ -1,0 +1,26 @@
+---
+#20260507 11327110 ceUeval9
+- name: Report A Task
+  hosts: test
+  tasks:
+    - name: Copy report.orig to report.a.txt
+      ansible.builtin.copy:
+        src: report.orig
+        dest: /root/report.a.txt
+
+    - name: Insert DATE before HOST
+      ansible.builtin.lineinfile:
+        path: /root/report.a.txt
+        insertbefore: '^HOST='
+        line: "DATE={{ ansible_date_time.date }}"
+
+    - name: Fill facts into report.a.txt
+      ansible.builtin.lineinfile:
+        path: /root/report.a.txt
+        regexp: "^{{ item.key }}="
+        line: "{{ item.key }}={{ item.value }}"
+      loop:
+        - { key: "HOST", value: "{{ inventory_hostname }}" }
+        - { key: "MEMORY", value: "{{ ansible_memtotal_mb }}" }
+        - { key: "VDA_SIZE", value: "{{ ansible_devices.vda.size | default('NONE') }}" }
+        - { key: "KERNEL", value: "{{ ansible_kernel }}" }

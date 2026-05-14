@@ -1,0 +1,9 @@
+---
+#20260423 11327110 ceUeval7
+- hosts: prod balancers
+  tasks:
+    - name: 當 /dev/vda5 存在時，執行 grep 導向至 idzdc.txt
+      ansible.builtin.shell: 
+        cmd: "grep ID /etc/os-release > idzdc.txt"
+        chdir: "{{ dir }}"
+      when: ansible_devices.vda.partitions.vda3 is defined

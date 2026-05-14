@@ -1,0 +1,8 @@
+
+# /home/ceuser/11327110/ccollect/ansible_collections
+Collection          Version
+------------------- -------
+ansible.posix       1.5.1  
+community.general   6.3.0  
+mynmspace.mycollect 1.0.0  
+rhel.system_roles   1.0.0  

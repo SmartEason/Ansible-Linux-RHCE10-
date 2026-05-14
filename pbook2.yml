@@ -1,0 +1,16 @@
+---
+#20260409 11327110 ceUeval5
+- hosts: dev
+  become: yes
+  tasks:
+    - name: Remove xz package
+      dnf:
+        name: xz
+        state: absent
+      notify: install xz
+
+  handlers:
+    - name: install xz
+      dnf:
+        name: xz
+        state: present

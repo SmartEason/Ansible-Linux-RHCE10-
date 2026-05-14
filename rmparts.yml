@@ -1,0 +1,8 @@
+---
+- hosts: dev
+  tasks:
+  - name: Remove partitions from disk
+    community.general.parted:
+      device: /dev/vdb
+      number: 1
+      state: absent

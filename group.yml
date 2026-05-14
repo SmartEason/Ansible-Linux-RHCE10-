@@ -1,0 +1,8 @@
+---
+#20260430 11327110 ceUeval8
+- hosts: dev
+  tasks:
+  - name: Ensure group "sharegrp" exists
+    ansible.builtin.group:
+      name: sharegrp
+      state: present

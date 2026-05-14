@@ -1,0 +1,6 @@
+---
+#20260416 11327110 ceUeval6
+- hosts: dev
+  become: yes
+  roles:
+    - nfs

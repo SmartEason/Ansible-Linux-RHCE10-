@@ -1,0 +1,21 @@
+---
+#20260507 11327110 ceUeval9
+- name: report1 - Report 1 Task with NONE default
+  hosts: test
+  tasks:
+    - name: Copy report1.orig to remote /root/report1.txt
+      ansible.builtin.copy:
+        src: report1.orig
+        dest: /root/report1.txt
+
+    - name: Replace facts with default NONE
+      ansible.builtin.lineinfile:
+        path: /root/report1.txt
+        regexp: "^{{ item.key }}="
+        line: "{{ item.key }}={{ item.value }}"
+      loop:
+        - { key: "HOST", value: "{{ inventory_hostname | default('NONE') }}" }
+        - { key: "BIOS", value: "{{ ansible_bios_version | default('NONE') }}" }
+        - { key: "VDA_SIZE", value: "{{ ansible_devices.vda.size | default('NONE') }}" }
+        - { key: "VDC_SIZE", value: "{{ ansible_devices.vdc.size | default('NONE') }}" }
+        - { key: "OS", value: "{{ ansible_os_family | default('NONE') }}" }

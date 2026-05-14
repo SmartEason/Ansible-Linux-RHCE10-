@@ -1,0 +1,10 @@
+---
+#20260409 11327110 ceUeval5
+- name: Configure postfix relayhost
+  hosts: prod
+  become: yes
+  vars:
+    postfix_conf:
+      relayhost: "deyu.wang"
+  roles:
+    - rhel.system_roles.postfix

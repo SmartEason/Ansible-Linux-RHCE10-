@@ -1,0 +1,10 @@
+---
+#20260430 11327110 ceUeval8
+- hosts: dev
+  tasks:
+  - name: Create dir1
+    ansible.builtin.file:
+      path: "{{ dir1 }}"
+      state: directory
+      group: sharegrp
+      mode: '0755'

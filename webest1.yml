@@ -1,0 +1,28 @@
+---
+#20260430 11327110 ceUeval8
+- name: Configure webuc environment
+  hosts: dev
+  become: yes
+  tasks:
+    - name: Create group webuc
+      group:
+        name: webuc
+        state: present
+
+    - name: Create directory /webuc
+      file:
+        path: /webuc
+        state: directory
+        group: webuc
+        mode: '0755'
+
+    - name: Create link /var/www/html/webuc
+      file:
+        src: /webuc
+        dest: /var/www/html/webuc
+        state: link
+
+    - name: Create index1.html with host IP
+      copy:
+        content: "WebTest1 on {{ ansible_default_ipv4.address }}\n"
+        dest: /webuc/index1.html
